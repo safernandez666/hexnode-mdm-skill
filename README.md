@@ -28,14 +28,24 @@ This skill enables AI agents and developers to:
 ## Features
 
 ### 📚 Complete API Documentation
-- **512 total parameters** across all platforms
+- **104 endpoints** fully documented with examples
+  - Actions: 37 endpoints (Scan, Lock, Wipe, Install Apps, etc.)
+  - Policies: 9 endpoints (Create, Edit, Delete, Associate)
+  - Devices/Users/Groups: 18 endpoints
+  - Applications: 12 endpoints (Apps, Groups, Catalogs)
+  - Automations, Reports, Content: 28 endpoints
+- **512 policy parameters** across all platforms
   - macOS: 115 parameters
   - iOS: 224 parameters
   - Android: 99 parameters
   - Windows: 74 parameters
-- Every parameter documented with type, description, and default values
+- Every parameter and endpoint documented with:
+  - HTTP method and URL
+  - Request/response examples
+  - Parameter types and descriptions
+  - Curl examples
 - Platform-specific policy configuration examples
-- Authentication and endpoint reference
+- Authentication and error code reference
 
 ### 🚀 Automation Scripts
 - **Device renaming scripts** for macOS (KLR naming convention)
@@ -173,10 +183,16 @@ The agent will use the skill's knowledge base to provide accurate, context-aware
 
 ## API Reference
 
-All API parameters and endpoints are documented in:
+Complete API documentation available in:
 
-- **[API_REFERENCE.md](API_REFERENCE.md)** - Complete 512-parameter reference
-- **[SKILL.md](SKILL.md)** - Full skill documentation with examples
+- **[HEXNODE_API_COMPLETE.md](HEXNODE_API_COMPLETE.md)** - All 104 endpoints with examples
+  - Scraped from official Hexnode documentation
+  - Includes HTTP methods, parameters, curl examples
+  - Organized by category (Actions, Policies, Devices, etc.)
+- **[API_REFERENCE.md](API_REFERENCE.md)** - 512 policy parameters reference
+  - Platform-specific configurations (macOS, iOS, Android, Windows)
+  - Parameter types, descriptions, and default values
+- **[SKILL.md](SKILL.md)** - Complete skill documentation with workflows
 
 ### Key Endpoints
 
@@ -287,16 +303,18 @@ curl -X POST \
 
 ```
 hexnode-mdm-skill/
-├── README.md                      # This file
-├── SKILL.md                       # Complete skill documentation (4500+ lines)
-├── API_REFERENCE.md               # Complete API parameter reference (512 params)
-├── .gitignore                     # Git ignore patterns
-├── scripts/                       # Automation scripts
+├── README.md                         # This file
+├── SKILL.md                          # Complete skill documentation (4500+ lines)
+├── HEXNODE_API_COMPLETE.md           # All 104 endpoints with examples (96 KB)
+├── API_REFERENCE.md                  # 512 policy parameters reference
+├── hexnode_api_complete_docs.json    # Scraped API data (JSON format)
+├── .gitignore                        # Git ignore patterns
+├── scripts/                          # Automation scripts
 │   ├── macos/
-│   │   └── klr_rename_hexnode.sh  # macOS renaming script
-│   └── windows/                   # Windows scripts (TBD)
-└── examples/                      # Usage examples
-    └── policy_templates/          # Policy JSON templates
+│   │   └── klr_rename_hexnode.sh     # macOS renaming script
+│   └── windows/                      # Windows scripts (TBD)
+└── examples/                         # Usage examples
+    └── policy_templates/             # Policy JSON templates
 ```
 
 ---
