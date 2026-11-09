@@ -221,35 +221,47 @@ Authorization: YOUR_API_KEY_HERE
 
 ### Device Renaming (macOS)
 
-Automatically rename Macs on enrollment with format: `COMPANY-{COUNTRY}{OS}-{SERIAL}`
+Automatically rename Macs on enrollment with custom naming conventions.
 
-**Location:** `scripts/macos/klr_rename_hexnode.sh`
+**Format Example:** `COMPANY-{COUNTRY}{OS}-{SERIAL}`
+
+**Location:** `scripts/macos/`
+
+**Available Scripts:**
+- Device rename script (multiple versions available)
+- Customizable naming format
+- Production-ready with comprehensive logging
 
 **Features:**
 - Extracts serial number from system
-- Determines country from network location
+- Determines country/location from network
 - Updates both hostname and Hexnode display name
 - Designed for Hexnode Automated Tasks
+- Comprehensive logging and error handling
+- Easily customizable for your organization
 
 **Usage:**
 ```bash
 # In Hexnode Console:
 # Manage → Automated Tasks → Scripts
-# Upload klr_rename_hexnode.sh
+# Upload your customized rename script
 # Run as Administrator
 # Trigger: On Enrollment
 ```
 
-### Okta Integration (macOS)
+**Note:** Script examples available in `scripts/macos/` - customize the naming format for your organization before deployment.
 
-Deploy Okta Verify and Browser Plugin to macOS devices for SSO and MFA/ZTA.
+### Enterprise App Deployment (macOS)
 
-**Location:** `scripts/macos/okta_*.sh`
+Deploy SSO, MFA, and security applications to macOS devices.
+
+**Location:** `scripts/macos/`
 
 **Available Scripts:**
-- `okta_verify_install.sh` - Install Okta Verify for MFA/ZTA (3.6 KB)
-- `okta_browser_plugin_install.sh` - Install Browser Plugin for SSO (2.7 KB)
-- `OKTA_SCRIPTS_README.md` - Complete implementation guide (4.1 KB)
+- Authentication app installation scripts
+- SSO integration tools
+- MFA/2FA deployment automation
+- Security tool installers
 
 **Implementation Method:**
 
@@ -257,9 +269,9 @@ Deploy Okta Verify and Browser Plugin to macOS devices for SSO and MFA/ZTA.
 ```
 1. Hexnode UI → Policies → Create/Edit Policy
 2. macOS → App Management → Required Apps
-3. Add "Okta Verify" from enterprise catalog
-4. macOS → App Configurations → Configure ZTA integration
-5. Policy Targets → Assign to "All macOS Devices" group
+3. Add your enterprise applications
+4. macOS → App Configurations → Configure as needed
+5. Policy Targets → Assign to device groups
 6. Save
 ```
 
@@ -267,7 +279,7 @@ Deploy Okta Verify and Browser Plugin to macOS devices for SSO and MFA/ZTA.
 ```bash
 # In Hexnode Console:
 # Manage → Automated Tasks → Scripts
-# Upload okta_verify_install.sh
+# Upload your custom installation script
 # Run as Administrator
 # Trigger: On Enrollment
 # Target: macOS devices
@@ -275,15 +287,14 @@ Deploy Okta Verify and Browser Plugin to macOS devices for SSO and MFA/ZTA.
 
 **Features:**
 - ✅ Automatic installation on enrollment
-- ✅ CrowdStrike ZTA integration support
-- ✅ Detailed logging (`/var/log/hexnode_okta_*.log`)
+- ✅ Enterprise app integration support
+- ✅ Detailed logging
 - ✅ Version detection and updates
 - ✅ Dynamic group assignment
+- ✅ Customizable for any enterprise app
 
-**Documentation:**
-- See `docs/OKTA_HEXNODE_IMPLEMENTATION_GUIDE.md` for step-by-step guide
-- See `docs/REPORTE_PARA_PABLO.md` for technical details
-- See `scripts/macos/OKTA_SCRIPTS_README.md` for script documentation
+**Script Templates:**
+Scripts can be customized for your organization's specific security and authentication tools.
 
 ### Policy Creation Scripts
 
@@ -358,16 +369,13 @@ hexnode-mdm-skill/
 ├── banner.png                         # GitHub repository banner (21:9)
 ├── .gitignore                         # Git ignore patterns
 ├── docs/                              # Implementation guides
-│   ├── OKTA_HEXNODE_IMPLEMENTATION_GUIDE.md
-│   ├── REPORTE_PARA_PABLO.md
-│   ├── RESUMEN_EJECUTIVO_PABLO.md
-│   └── GUIA_IMPLEMENTACION_OKTA_SCRIPTS.md
+│   ├── Implementation guides for various scenarios
+│   └── Troubleshooting and best practices
 ├── scripts/                           # Automation scripts
 │   ├── macos/
-│   │   ├── klr_rename_hexnode.sh      # macOS renaming script
-│   │   ├── okta_verify_install.sh     # Okta Verify installation
-│   │   ├── okta_browser_plugin_install.sh
-│   │   └── OKTA_SCRIPTS_README.md     # Okta scripts documentation
+│   │   ├── device_rename_*.sh         # macOS device renaming scripts
+│   │   ├── enterprise_app_install_*.sh # Enterprise app deployment
+│   │   └── Script documentation and examples
 │   └── windows/                       # Windows scripts (TBD)
 └── examples/                          # Usage examples
     └── policy_templates/              # Policy JSON templates

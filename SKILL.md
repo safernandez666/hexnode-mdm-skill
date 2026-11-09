@@ -141,7 +141,7 @@ Understanding Hexnode's architecture and workflows visually. All diagrams based 
                              │
                              ▼
           Execute script as root: /bin/bash
-            klr_rename_hexnode_FINAL.sh
+            device_rename_script.sh
                              │
                              ▼
 ┌────────────────────────────────────────────────────────────────┐
@@ -4223,7 +4223,7 @@ T+2:10    Policy assignment begins
           
 T+2:20    Policy applied to device
           Status: "Applied"
-          Script: klr_rename_hexnode_FINAL.sh
+          Script: device_rename_script.sh
           Trigger: "Subsequent device startup"
           
 T+2:30    Agent notifies device
