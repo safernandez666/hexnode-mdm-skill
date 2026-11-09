@@ -691,3 +691,57 @@ Shell Command
 
 
 ---
+
+---
+
+## Actions API - Associate Policy
+
+**Endpoint:** `POST /api/v1/actions/associate_policy/`
+
+**Purpose:** Associate policies to target devices, users, or groups.
+
+### Request Format
+
+```json
+{
+  "policies": [45],           // Required. Array of policy IDs
+  "devices": [11, 14, 15],    // Optional. Array of device IDs
+  "devicegroups": [12],       // Optional. Array of device group IDs
+  "users": [0],               // Optional. Array of user IDs
+  "usergroups": [4]           // Optional. Array of user group IDs
+}
+```
+
+### Example
+
+```bash
+curl -X POST \
+  -H "Authorization: YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "policies": [45],
+    "devices": [11, 14, 15]
+  }' \
+  https://klar.uem.hexnode.com/api/v1/actions/associate_policy/
+```
+
+### Response
+
+```
+HTTP/1.1 200 OK
+```
+
+### Parameters
+
+| Argument | Type | Description | Required |
+|----------|------|-------------|----------|
+| policies | Array | IDs of the policies to associate | Yes |
+| devices | Array | IDs of the devices | No |
+| devicegroups | Array | IDs of the device groups | No |
+| users | Array | IDs of the users | No |
+| usergroups | Array | IDs of the user groups | No |
+
+**Note:** At least one target (devices, devicegroups, users, or usergroups) must be specified.
+
+**Source:** https://www.hexnode.com/mobile-device-management/developers/actions/associate-policy/
+
