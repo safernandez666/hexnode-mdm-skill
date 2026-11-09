@@ -240,6 +240,51 @@ Automatically rename Macs on enrollment with format: `COMPANY-{COUNTRY}{OS}-{SER
 # Trigger: On Enrollment
 ```
 
+### Okta Integration (macOS)
+
+Deploy Okta Verify and Browser Plugin to macOS devices for SSO and MFA/ZTA.
+
+**Location:** `scripts/macos/okta_*.sh`
+
+**Available Scripts:**
+- `okta_verify_install.sh` - Install Okta Verify for MFA/ZTA (3.6 KB)
+- `okta_browser_plugin_install.sh` - Install Browser Plugin for SSO (2.7 KB)
+- `OKTA_SCRIPTS_README.md` - Complete implementation guide (4.1 KB)
+
+**Implementation Method:**
+
+**Option 1: App Management (Recommended)**
+```
+1. Hexnode UI → Policies → Create/Edit Policy
+2. macOS → App Management → Required Apps
+3. Add "Okta Verify" from enterprise catalog
+4. macOS → App Configurations → Configure ZTA integration
+5. Policy Targets → Assign to "All macOS Devices" group
+6. Save
+```
+
+**Option 2: Custom Scripts**
+```bash
+# In Hexnode Console:
+# Manage → Automated Tasks → Scripts
+# Upload okta_verify_install.sh
+# Run as Administrator
+# Trigger: On Enrollment
+# Target: macOS devices
+```
+
+**Features:**
+- ✅ Automatic installation on enrollment
+- ✅ CrowdStrike ZTA integration support
+- ✅ Detailed logging (`/var/log/hexnode_okta_*.log`)
+- ✅ Version detection and updates
+- ✅ Dynamic group assignment
+
+**Documentation:**
+- See `docs/OKTA_HEXNODE_IMPLEMENTATION_GUIDE.md` for step-by-step guide
+- See `docs/REPORTE_PARA_PABLO.md` for technical details
+- See `scripts/macos/OKTA_SCRIPTS_README.md` for script documentation
+
 ### Policy Creation Scripts
 
 **Bash Scripts:**
@@ -305,18 +350,27 @@ curl -X POST \
 
 ```
 hexnode-mdm-skill/
-├── README.md                         # This file
-├── SKILL.md                          # Complete skill documentation (4500+ lines)
-├── HEXNODE_API_COMPLETE.md           # All 104 endpoints with examples (96 KB)
-├── API_REFERENCE.md                  # 512 policy parameters reference
-├── hexnode_api_complete_docs.json    # Scraped API data (JSON format)
-├── .gitignore                        # Git ignore patterns
-├── scripts/                          # Automation scripts
+├── README.md                          # This file
+├── SKILL.md                           # Complete skill documentation (4500+ lines)
+├── HEXNODE_API_COMPLETE.md            # All 104 endpoints with examples (96 KB)
+├── API_REFERENCE.md                   # 512 policy parameters reference
+├── hexnode_api_complete_docs.json     # Scraped API data (JSON format)
+├── banner.png                         # GitHub repository banner (21:9)
+├── .gitignore                         # Git ignore patterns
+├── docs/                              # Implementation guides
+│   ├── OKTA_HEXNODE_IMPLEMENTATION_GUIDE.md
+│   ├── REPORTE_PARA_PABLO.md
+│   ├── RESUMEN_EJECUTIVO_PABLO.md
+│   └── GUIA_IMPLEMENTACION_OKTA_SCRIPTS.md
+├── scripts/                           # Automation scripts
 │   ├── macos/
-│   │   └── klr_rename_hexnode.sh     # macOS renaming script
-│   └── windows/                      # Windows scripts (TBD)
-└── examples/                         # Usage examples
-    └── policy_templates/             # Policy JSON templates
+│   │   ├── klr_rename_hexnode.sh      # macOS renaming script
+│   │   ├── okta_verify_install.sh     # Okta Verify installation
+│   │   ├── okta_browser_plugin_install.sh
+│   │   └── OKTA_SCRIPTS_README.md     # Okta scripts documentation
+│   └── windows/                       # Windows scripts (TBD)
+└── examples/                          # Usage examples
+    └── policy_templates/              # Policy JSON templates
 ```
 
 ---
