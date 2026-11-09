@@ -1,0 +1,6065 @@
+[
+  {
+    "title": "Scan Device",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/scan-device/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Scan Location",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/scan-location/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Lock Device",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/lock-device/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "message",
+        "type": "String",
+        "description": "Optional. Message to be displayed on the device"
+      },
+      {
+        "argument": "phone_number",
+        "type": "String",
+        "description": "Optional. Phone number"
+      },
+      {
+        "argument": "user",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroup",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "device",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroup",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      },
+      {
+        "argument": "system_lock_pin",
+        "type": "String",
+        "description": "Required for macOS devices without Apple Silicon Chip. A 6-digit PIN to unlock the device."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Clear Passcode",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/clear-passcode/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Change Owner",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/change-owner/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Required. IDs of the devices"
+      },
+      {
+        "argument": "user",
+        "type": "String",
+        "description": "Required. IDs of the user"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Wipe Device",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/wipe-device/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Enable Lost Mode",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/enable-lost-mode/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      },
+      {
+        "argument": "message",
+        "type": "String",
+        "description": "Optional. Add a message to display on the device screen."
+      },
+      {
+        "argument": "phone_number",
+        "type": "String",
+        "description": "Optional. Add a phone number."
+      },
+      {
+        "argument": "footnote",
+        "type": "String",
+        "description": "Optional. Add a footnote to be displayed on the device."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Disable Lost Mode",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/disable-lost-mode/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Disenroll Devices",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/disenroll-devices/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Install Application",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/install-application/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "apps",
+        "type": "Array",
+        "description": "Required. IDs of the apps to be installed"
+      },
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Uninstall Applications",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/uninstall-applications/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "apps",
+        "type": "Array",
+        "description": "IDs of the apps to be removed"
+      },
+      {
+        "argument": "user",
+        "type": "Array",
+        "description": "IDs of the users"
+      },
+      {
+        "argument": "usergroup",
+        "type": "Array",
+        "description": "IDs of the user groups"
+      },
+      {
+        "argument": "device",
+        "type": "Array",
+        "description": "IDs of the devices"
+      },
+      {
+        "argument": "devicegroup",
+        "type": "Array",
+        "description": "IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Enable Kiosk",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/enable-kiosk/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Associate policy",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/associate-policy/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "policies",
+        "type": "Array",
+        "description": "Required. IDs of the policy"
+      },
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Remove Policy",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/remove-policy/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "policies",
+        "type": "Array",
+        "description": "Required. IDs of the policy"
+      },
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Mark as disenrolled",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/mark-as-disenrolled/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Set Friendly Name",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/set-friendly-name/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "set_collective_name",
+        "type": "Boolean type",
+        "description": "Not mandatory."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Change Device Ownership",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/change-device-ownership/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Required. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Required. IDs of the devicegroups"
+      },
+      {
+        "argument": "ownership",
+        "type": "Integer",
+        "description": "Required.Specify the ownership of the devices. Choose1 for Personaland2 for Corporate."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Broadcast Message",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/broadcast-message/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Edit Device Attribute",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/edit-device-attribute/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "Update_in_bulk",
+        "type": "Boolean type",
+        "description": "Update attributes of devices in bulk."
+      },
+      {
+        "argument": "Update_single_device",
+        "type": "Boolean type",
+        "description": "Update attributes of a single device."
+      },
+      {
+        "argument": "Device_ID",
+        "type": "Array",
+        "description": "Mandatory.Specify the list of device IDs."
+      },
+      {
+        "argument": "Device_name",
+        "type": "Character",
+        "description": "Optional.Specify the device name of the devices."
+      },
+      {
+        "argument": "Asset_Tag",
+        "type": "Character",
+        "description": "Optional.Specify the asset tag of the devices."
+      },
+      {
+        "argument": "Department",
+        "type": "Character",
+        "description": "Optional.Specify the department of the devices."
+      },
+      {
+        "argument": "Device_Notes",
+        "type": "Character",
+        "description": "Optional.Specify the device notes to be added to the devices."
+      },
+      {
+        "argument": "Description",
+        "type": "Character",
+        "description": "Optional.Specify the description of the devices."
+      },
+      {
+        "argument": "Ownership",
+        "type": "Integer",
+        "description": "Optional.Specify the ownership of the devices. Choose1 for Personaland2 for Corporate."
+      },
+      {
+        "argument": "Device_name_append_number",
+        "type": "Boolean",
+        "description": "Optional.If set true, append number is added to device name."
+      },
+      {
+        "argument": "Asset_tag_append_number",
+        "type": "Boolean",
+        "description": "Optional.If set true, append number is added to asset tag."
+      },
+      {
+        "argument": "Department_append_number",
+        "type": "Boolean",
+        "description": "Optional.If set true, append number is added to department."
+      },
+      {
+        "argument": "Asset_tag_starting_number",
+        "type": "Integer",
+        "description": "Mandatory whenAsset_tag_append_numberis set true.Specify the starting number."
+      },
+      {
+        "argument": "Department_starting_number",
+        "type": "Integer",
+        "description": "Mandatory whenDepatment_append_numberis set true.Specify the starting number."
+      },
+      {
+        "argument": "Device_name_starting_number",
+        "type": "Integer",
+        "description": "Mandatory whenDevice_name_append_numberis set true.Specify the starting number."
+      },
+      {
+        "argument": "Use_suffix_for_DeviceNotes",
+        "type": "Boolean",
+        "description": "Optional.If set true, suffix will be added to device notes."
+      },
+      {
+        "argument": "Use_suffix_for_Description",
+        "type": "Boolean",
+        "description": "Optional.If set true, suffix will be added to description."
+      },
+      {
+        "argument": "Suffix_devicenotes",
+        "type": "Integer",
+        "description": "Mandatory whenUse_suffix_for_DeviceNotesis set to true.Specify the starting number of the suffix."
+      },
+      {
+        "argument": "Suffix_description",
+        "type": "Integer",
+        "description": "Mandatory whenUse_suffix_for_Descriptionis set to true.Specify the starting number of the suffix."
+      },
+      {
+        "argument": "deviceID",
+        "type": "Integer",
+        "description": "Mandatory.Specify the Device ID of the device."
+      },
+      {
+        "argument": "device_name",
+        "type": "Character",
+        "description": "Optional.Specify the device name of the device."
+      },
+      {
+        "argument": "asset_tag",
+        "type": "Character",
+        "description": "Optional.Specify the asset tag of the device."
+      },
+      {
+        "argument": "department",
+        "type": "Character",
+        "description": "Optional.Specify the department of the device."
+      },
+      {
+        "argument": "device_notes",
+        "type": "Character",
+        "description": "Optional.Specify the device notes to be added to the device."
+      },
+      {
+        "argument": "description",
+        "type": "Character",
+        "description": "Optional.Specify the description of the device."
+      },
+      {
+        "argument": "ownership",
+        "type": "Integer",
+        "description": "Optional.Specify the ownership of the device. Choose1 for Personaland2 for Corporate."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Clear App Data",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/clear-app-data/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      },
+      {
+        "argument": "apps",
+        "type": "Array",
+        "description": "Required. IDs of the apps for which the data needs to be cleared."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Sync Local Accounts",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/sync-local-accounts/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Set Password",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/set-password/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Required. Specify the password for Android device enrolled in Android Enterprise Program."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Rename Device",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/rename-device/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      },
+      {
+        "argument": "name",
+        "type": "Char",
+        "description": "Mandatory. The same name is given for all the selected devices."
+      },
+      {
+        "argument": "use_suffix",
+        "type": "Boolean type",
+        "description": "Not mandatory. Check whether suffix is needed."
+      },
+      {
+        "argument": "suffix",
+        "type": "Integer",
+        "description": "Mandatory when use_suffix=true. Starting number of the suffix."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Remote Ring",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/remote-ring/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      },
+      {
+        "argument": "message",
+        "type": "String",
+        "description": "Optional. Sample message."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Clear Activation Lock",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/clear-activation-lock/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Request Application Feedback",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/request-application-feedback/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Enable Personal Hotspot",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/enable-personal-hotspot/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Disable Personal Hotspot",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/disable-personal-hotspot/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Join AD Domain",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/join-ad-domain/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "domain",
+        "type": "String",
+        "description": "Required. Name of the domain to be linked."
+      },
+      {
+        "argument": "server",
+        "type": "String",
+        "description": "Required. Specify the full name of the domain controller that hosts the domain."
+      },
+      {
+        "argument": "username",
+        "type": "String",
+        "description": "Required. Enter the username of the corresponding user’s AD login credentials."
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Optional. Enter the password of the corresponding user’s AD login credentials."
+      },
+      {
+        "argument": "restart",
+        "type": "Boolean",
+        "description": "If true == Restarts the device,If false == Doesn’t restart the device."
+      },
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Unjoin AD Domain",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/unjoin-ad-domain/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "username",
+        "type": "String",
+        "description": "Required. Enter the username of the corresponding user’s AD login credentials"
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Optional. Enter the password of the corresponding user’s AD login credentials."
+      },
+      {
+        "argument": "restart",
+        "type": "Boolean",
+        "description": "If true == Restarts the device,If false == Doesn’t restart the device."
+      },
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Hexnode App Logs",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/hexnode-app-logs/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Add to device group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/add-to-device-group/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Required. IDs of the devices."
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Required. IDs of the device groups."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Add To User Group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/add-to-user-group/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Required. IDs of the users."
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Required. IDs of the user groups."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Delete Device",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/delete-device/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Required. IDs of the devices."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Delete User",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/delete-user/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Required. IDs of the users."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Deploy Files",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/file-deployment-via-api/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "file_ids",
+        "type": "Array",
+        "description": "IDs of the files to deploy (must be active and exist)"
+      },
+      {
+        "argument": "file_path",
+        "type": "String",
+        "description": "Destination path on the device (leading / added if missing)"
+      },
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Remove files",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/actions/api-to-remove-files/",
+    "category": "Actions",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "file_paths",
+        "type": "Array",
+        "description": "Destination path or path/filename to be removed"
+      },
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List App Catalogs",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-catalogs/list-app-catalogs/",
+    "category": "App Catalogs",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameter": "order_by",
+        "type": "String",
+        "description": "Optional. Order the result by app catalog name. Useascordesc",
+        "default value": "asc"
+      },
+      {
+        "parameter": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameter": "per_page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Create a Catalog",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-catalogs/create-a-catalog/",
+    "category": "App Catalogs",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "name",
+        "type": "String",
+        "description": "Required. Name of the app catalog"
+      },
+      {
+        "argument": "description",
+        "type": "String",
+        "description": "Optional"
+      },
+      {
+        "argument": "apps",
+        "type": "Integer array",
+        "description": "Optional. The applications IDs"
+      },
+      {
+        "argument": "app_groups",
+        "type": "Integer array",
+        "description": "Optional. The App group IDs"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Retrieve App Catalog Details",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-catalogs/retrieve-app-catalog-details/",
+    "category": "App Catalogs",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Update App Catalogs",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-catalogs/update-app-catalogs/",
+    "category": "App Catalogs",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "name",
+        "type": "String",
+        "description": "Required. Name of the app group"
+      },
+      {
+        "argument": "description",
+        "type": "String",
+        "description": "Required. Description for the group"
+      },
+      {
+        "argument": "apps",
+        "type": "Integer array",
+        "description": "Optional. IDs of the applications"
+      },
+      {
+        "argument": "app_groups",
+        "type": "Integer array",
+        "description": "Optional. IDs of the app group"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Add/Remove Apps",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-catalogs/add-remove-apps/",
+    "category": "App Catalogs",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "add_apps",
+        "type": "Integer array",
+        "description": "Required. An array of app IDs"
+      },
+      {
+        "argument": "remove_apps",
+        "type": "Integer array",
+        "description": "Required. An array of app IDs"
+      },
+      {
+        "argument": "add_groups",
+        "type": "Integer array",
+        "description": "Required. An array of app group IDs"
+      },
+      {
+        "argument": "remove_groups",
+        "type": "Integer array",
+        "description": "Required. An array of app group IDs"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Delete App Catalog",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-catalogs/delete-app-catalog/",
+    "category": "App Catalogs",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List App Groups",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-groups/list-app-groups/",
+    "category": "App Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameter": "order_by",
+        "type": "String",
+        "description": "Optional. Order the result by app group name. Useascordesc",
+        "default value": "asc"
+      },
+      {
+        "parameter": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameter": "per_page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Create App Group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-groups/create-app-group/",
+    "category": "App Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "name",
+        "type": "String",
+        "description": "Required. Name of the app group"
+      },
+      {
+        "argument": "description",
+        "type": "String",
+        "description": "Optional"
+      },
+      {
+        "argument": "apps",
+        "type": "Array",
+        "description": "Optional. IDs of the applications"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Retrieve App Group Details",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-groups/retrieve-app-group-details/",
+    "category": "App Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Update App Group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-groups/update-app-group/",
+    "category": "App Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "name",
+        "type": "String",
+        "description": "Required. Name of the app group"
+      },
+      {
+        "argument": "description",
+        "type": "String",
+        "description": "Required. Description for the group"
+      },
+      {
+        "argument": "apps",
+        "type": "Integer array",
+        "description": "Optional. IDs of the app"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Add/Remove Apps",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-groups/add-remove-apps/",
+    "category": "App Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "add_apps",
+        "type": "Integer array",
+        "description": "Required. An array of app IDs"
+      },
+      {
+        "argument": "remove_apps",
+        "type": "Integer array",
+        "description": "Required. An array of app IDs"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Delete App Group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/app-groups/delete-app-group/",
+    "category": "App Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List All Apps",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/applications/list-all-apps/",
+    "category": "Applications",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameter": "order_by",
+        "type": "String",
+        "description": "Optional. Order the result by application name. Useascordesc",
+        "default value": "asc"
+      },
+      {
+        "parameter": "app_type",
+        "type": "String",
+        "description": "Optional. Values can bestore,weborenterprise",
+        "default value": ""
+      },
+      {
+        "parameter": "platform",
+        "type": "String",
+        "description": "Optional. Values can beiosorandroid",
+        "default value": ""
+      },
+      {
+        "parameter": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameter": "per_page",
+        "type": "Integer",
+        "description": "Optional. Themaximum valueis250",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Search App",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/applications/search-app/",
+    "category": "Applications",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameter": "keyword",
+        "type": "String",
+        "description": "Required. Name of the app to be searched"
+      },
+      {
+        "parameter": "platform",
+        "type": "String",
+        "description": "Required. Useiosfor App Store app search andandroidfor Play Store app search"
+      },
+      {
+        "parameter": "country",
+        "type": "String",
+        "description": "Optional. ISO alpha-2 country code. For example, us,ca"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Add App to List",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/applications/add-app-to-list/",
+    "category": "Applications",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "name",
+        "type": "String",
+        "description": "Required. Name of the app",
+        "default value": ""
+      },
+      {
+        "argument": "app_type",
+        "type": "String",
+        "description": "Required. Usestoreorweb",
+        "default value": ""
+      },
+      {
+        "argument": "platform",
+        "type": "String",
+        "description": "Required. Useiosfor App Store app search andandroidfor Play Store app search",
+        "default value": ""
+      },
+      {
+        "argument": "price",
+        "type": "String",
+        "description": "Optional. For example, $5",
+        "default value": ""
+      },
+      {
+        "argument": "category",
+        "type": "String",
+        "description": "Required. Category for the app. For example, entertainment",
+        "default value": ""
+      },
+      {
+        "argument": "vendor",
+        "type": "String",
+        "description": "Optional",
+        "default value": ""
+      },
+      {
+        "argument": "icon",
+        "type": "String",
+        "description": "Required. URL or base64 encoded data of the icon",
+        "default value": ""
+      },
+      {
+        "argument": "average_user_rating",
+        "type": "String",
+        "description": "Optional. For example, rating 3 out of 5",
+        "default value": ""
+      },
+      {
+        "argument": "content_rating",
+        "type": "String",
+        "description": "Optional",
+        "default value": ""
+      },
+      {
+        "argument": "remove_with_mdm",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "prevent_backup",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "identifier",
+        "type": "String",
+        "description": "Required. Identifier of the app. For example, com.hexnode.hexnodeMDM"
+      },
+      {
+        "argument": "appstore_id",
+        "type": "Integer",
+        "description": "Required. App Store ID of the app"
+      },
+      {
+        "argument": "version",
+        "type": "String",
+        "description": "Required. The version of the app"
+      },
+      {
+        "argument": "bundle_size",
+        "type": "Float",
+        "description": "Required. The size of the app"
+      },
+      {
+        "argument": "description",
+        "type": "String",
+        "description": "Required. Values can be null"
+      },
+      {
+        "argument": "primaryGenreId",
+        "type": "Integer",
+        "description": "Required. Value can be null"
+      },
+      {
+        "argument": "appstore_ulr",
+        "type": "Integer",
+        "description": "Required. URL for the app in the App Store"
+      },
+      {
+        "argument": "identifier",
+        "type": "String",
+        "description": "Required. Identifier of the app"
+      },
+      {
+        "argument": "version",
+        "type": "String",
+        "description": "Optional. The version of the app"
+      },
+      {
+        "argument": "bundle_size",
+        "type": "Float",
+        "description": "Optional. Size of the app"
+      },
+      {
+        "argument": "webapp_url",
+        "type": "String",
+        "description": "Required. URL for the web app"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Retrieve App Details",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/applications/retrieve-app-details/",
+    "category": "Applications",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Update Web App",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/applications/update-web-app/",
+    "category": "Applications",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "name",
+        "type": "String",
+        "description": "Required. Name of the app."
+      },
+      {
+        "argument": "app_type",
+        "type": "String",
+        "description": "Required. Useweb."
+      },
+      {
+        "argument": "webapp_url",
+        "type": "String",
+        "description": "Required. URL for the web app."
+      },
+      {
+        "argument": "category",
+        "type": "String",
+        "description": "Required. Category for the app. For example, entertainment"
+      },
+      {
+        "argument": "icon",
+        "type": "String",
+        "description": "Required. URL or base64 encoded data of the icon"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Remove App",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/applications/remove-app/",
+    "category": "Applications",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List all Automations",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/automations/api-to-list-automations/",
+    "category": "Automations",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Initiate Automation",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/automations/initiate-automation-via-api/",
+    "category": "Automations",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "automationList",
+        "type": "Array",
+        "description": "A list of identifiers for the automation profiles you wish to run (e.g., [1, 2, 3, 4]). These IDs determine which specific configurations or policies will be applied."
+      },
+      {
+        "argument": "applyFilter",
+        "type": "Boolean",
+        "description": "A boolean value (true or false) that determines whether the system should cross-check and filter the provided device list against the target criteria before execution. Default value: false"
+      },
+      {
+        "argument": "targets",
+        "type": "Dictionary",
+        "description": "Defines the scope of the deployment. See the target parameters below."
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "A list of unique IDs for individual devices (e.g., [1, 2, 3, 4])."
+      },
+      {
+        "argument": "deviceGroups",
+        "type": "Array",
+        "description": "A list of IDs for specific device groups (e.g., [1, 2, 3, 4])."
+      },
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "A list of unique IDs for individual users (e.g., [1, 2, 3, 4])."
+      },
+      {
+        "argument": "userGroups",
+        "type": "Array",
+        "description": "A list of IDs for specific user groups (e.g., [1, 2, 3, 4])."
+      },
+      {
+        "argument": "domains",
+        "type": "Array",
+        "description": "A list of IDs for managed network domains (e.g., [1, 2, 3, 4])."
+      },
+      {
+        "argument": "ou",
+        "type": "Array",
+        "description": "A list of IDs for Organizational Units (OUs) (e.g., [1, 2, 3, 4])."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Generate pre-signed upload URL",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/content-management/api-to-generate-pre-signed-upload-url/",
+    "category": "Content Management",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "file_name",
+        "type": "String",
+        "description": "Name of the file with extension (e.g., report.pdf)"
+      },
+      {
+        "argument": "content_type",
+        "type": "String",
+        "description": "Optional MIME type; defaults to application/octet-stream"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Verify file upload to Amazon S3",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/content-management/api-to-verify-file-upload/",
+    "category": "Content Management",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "file_uuid",
+        "type": "String",
+        "description": "The UUID returned from the generate-presigned-upload-url endpoint"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Delete files from Amazon S3",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/content-management/api-to-delete-files-from-amazon-s3/",
+    "category": "Content Management",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "file_ids",
+        "type": "Array",
+        "description": "IDs of the files to be permanently deleted from the catalog"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List Device Groups",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/device-groups/list-device-groups/",
+    "category": "Device Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameters": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameters": "per_page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Create Device Group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/device-groups/create-device-group/",
+    "category": "Device Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "arguments": "groupname",
+        "type": "String",
+        "description": "Required. Name of the device group"
+      },
+      {
+        "arguments": "description",
+        "type": "String",
+        "description": "Required. Description for the group"
+      },
+      {
+        "arguments": "devices",
+        "type": "Integer array",
+        "description": "Optional. Array of enrolled device IDs"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Retrieve Device Group Details",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/device-groups/retrieve-device-group-details/",
+    "category": "Device Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Update Device Group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/device-groups/update-device-group/",
+    "category": "Device Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "arguments": "groupname",
+        "type": "String",
+        "description": "Required. Name of the device group"
+      },
+      {
+        "arguments": "description",
+        "type": "String",
+        "description": "Required. Description for the group"
+      },
+      {
+        "arguments": "devices",
+        "type": "Integer array",
+        "description": "Optional. IDs of the devices"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Add/Remove Devices",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/device-groups/add-remove-devices/",
+    "category": "Device Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "arguments": "add_devices",
+        "type": "String",
+        "description": "Required. An array of device IDs of enrolled devices"
+      },
+      {
+        "arguments": "remove_devices",
+        "type": "Integer array",
+        "description": "Required. An array of device IDs of enrolled devices"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Delete Device Group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/device-groups/delete-device-group/",
+    "category": "Device Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List All Devices",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/devices/list-all-devices/",
+    "category": "Devices",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameters": "order_by",
+        "type": "String",
+        "description": "Optional. Order the result by device name. Useascordesc",
+        "default value": "asc"
+      },
+      {
+        "parameters": "platform",
+        "type": "String",
+        "description": "Optional. Filter by OS. Useios,androidorwindows",
+        "default value": ""
+      },
+      {
+        "parameters": "is_active",
+        "type": "Boolean",
+        "description": "Optional. Filter by active or inactive devices. UseTrueorFalse",
+        "default value": ""
+      },
+      {
+        "parameters": "device_type",
+        "type": "String",
+        "description": "Optional. Usesmartphoneortablet",
+        "default value": ""
+      },
+      {
+        "parameters": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameters": "per_page",
+        "type": "Integer",
+        "description": "Optional. Themaximum valueis250",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Retrieve Device Details",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/devices/retrieve-device-details/",
+    "category": "Devices",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List Device Policies",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/devices/list-device-policies/",
+    "category": "Devices",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameters": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameters": "per_page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List All Applications",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/devices/list-all-applications/",
+    "category": "Devices",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameters": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameters": "per_page",
+        "type": "Integer",
+        "description": "Optional. Themaximum valueis250",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List Device Locations",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/devices/list-device-locations/",
+    "category": "Devices",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameters": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameters": "per_page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Action Status",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/devices/action-status/",
+    "category": "Devices",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameters": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameters": "per_page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Developers",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/",
+    "category": "General",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Disable Kiosk",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/disable-kiosk/",
+    "category": "General",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Power-Off Device",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/power-off-device/",
+    "category": "General",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Restart Device",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/restart-device/",
+    "category": "General",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "users",
+        "type": "Array",
+        "description": "Optional. IDs of the users"
+      },
+      {
+        "argument": "usergroups",
+        "type": "Array",
+        "description": "Optional. IDs of the user groups"
+      },
+      {
+        "argument": "devices",
+        "type": "Array",
+        "description": "Optional. IDs of the devices"
+      },
+      {
+        "argument": "devicegroups",
+        "type": "Array",
+        "description": "Optional. IDs of the device groups"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Developers",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/?_gl=1%2A1fqfuuu%2A_ga%2AMTQ4NzgwOTc2OS4xNzcxMzIwMjQy%2A_ga_3EGK3S7FRS%2AczE3NzEzOTgzMTUkbzQkZzEkdDE3NzEzOTgzNjUkajEwJGwwJGgw%2A_gcl_au%2AOTkzNjA3MTEyLjE3NzEzMjAyNDA.",
+    "category": "General",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List all Organizational Units",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/organizational-units/api-to-list-all-organizational-units/",
+    "category": "Organizational Units",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "domain_id",
+        "type": "Integer",
+        "description": "The unique identifier of the domain from which to fetch the Organizational Units. (Passed as a query parameter in the URL)."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List Policies",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/policies/list-policies/",
+    "category": "Policies",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameter": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameter": "per_page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Create Policy",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/policies/create-policy/",
+    "category": "Policies",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "arguments": "name",
+        "type": "String",
+        "description": "Name of the policy"
+      },
+      {
+        "arguments": "description",
+        "type": "String",
+        "description": "Description of the policy"
+      },
+      {
+        "arguments": "ios",
+        "type": "Dictionary",
+        "description": "Optional. If provided this dictionary, provide the following keys:password,restrictions,advanced_restrictions,web_content_filter,wifi,email,activesync,ldap,caldav,subscribe_calendar,carddav,webclip,access_point,applock, wallpaper,globalproxy,lock_screen_msg,app_management. It can be set to null if nothing is configured"
+      },
+      {
+        "arguments": "android",
+        "type": "Dictionary",
+        "description": "Optional. If provided this dictionary, provide the following keys:password,restrictions,wifi,email,activesync,applock,app_managementandwallpaper. It can also be set to null if nothing configured"
+      },
+      {
+        "arguments": "general_settings",
+        "type": "Dictionary",
+        "description": "Optional. Dictionary for general_settings currently contains only alocation_settingskey. Its value is a dictionary that contains keystrackingdisabledandinterval_minutes."
+      },
+      {
+        "key": "trackingdisabled",
+        "type": "Boolean"
+      },
+      {
+        "key": "interval_minutes",
+        "type": "Integer"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "iOS Policies",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/policies/ios-policies/",
+    "category": "Policies",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "allow_simple",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "require_alphanumeric",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "min_length",
+        "type": "Integer",
+        "description": "Optional. Values can be from 1 to 16",
+        "default value": ""
+      },
+      {
+        "argument": "min_complex_char",
+        "type": "Integer",
+        "description": "Optional. Values can be from 1 to 4",
+        "default value": ""
+      },
+      {
+        "argument": "max_pinage_in_days",
+        "type": "Integer",
+        "description": "Optional. Specifies the number of days for which the passcode can remain unchanged",
+        "default value": ""
+      },
+      {
+        "argument": "max_inactivity",
+        "type": "Integer",
+        "description": "Optional. This dictionary contains email configurations",
+        "default value": ""
+      },
+      {
+        "argument": "pin_history",
+        "type": "Dictionary",
+        "description": "Optional. When the user changes the passcode, it has to be unique within the last N entries in the history.The minimum value is 1, and the maximum value is 50",
+        "default value": ""
+      },
+      {
+        "argument": "max_grace_period",
+        "type": "Integer",
+        "description": "Optional. The maximum grace period (in minutes) to unlock the phone without entering a passcode.Supported values are1,5,15,60and240",
+        "default value": ""
+      },
+      {
+        "argument": "max_failed_attempts",
+        "type": "Integer",
+        "description": "Optional. Specifies the number of allowed failed attempts to enter the passcode on the device’s lock screen.Supported values are4,5,6,7,8,9and10",
+        "default value": ""
+      },
+      {
+        "argument": "allow_app_installation",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_airdrop_managemendapps",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allow_camera",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_video_conferencing",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_screen_shot",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allow_global_background_fetch_when_roaming",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_touchId",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_assistant",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_assistant_while_locked",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_voice_dialing",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_passbook_while_locked",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allow_inapp_purchases",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "force_itunes_store_password_entry",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_multiplayer_gaming",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_adding_game_center_friends",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_enterprise_app_trust",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_enterprise_app_trust_modification",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_enterprise_book_backup",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_managed_app_sync",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_youtube",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_itunes",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_safari",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "safari_allow_auto_fill",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "safari_force_fraud_warning",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "safari_allow_java_script",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "safari_allow_popups",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "safari_accept_cookies",
+        "type": "String",
+        "description": "Optional. Values can bealways,visitedornever",
+        "default value": ""
+      },
+      {
+        "argument": "allow_cloud_backup",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_cloud_document_sync",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_photo_stream",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_shared_stream",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_icloud_photo",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_lockscreen_notify",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_lockscreen_todayView",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_lockscreen_control",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_ota_pki_update",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "limit_ad_tracking",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allow_diagnostic_submission",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_untrusted_tls_prompt",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "force_encrypted_backup",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "force_applewatch_Detection",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allow_explicit_content",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_bookstore_erotica",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "rating_region",
+        "type": "String",
+        "description": "Optional. Values can beus,au,ca,de,fr,ie,jp,nzorgb",
+        "default value": ""
+      },
+      {
+        "argument": "rating_movies",
+        "type": "String",
+        "description": "Optional. Values can beallow,nc-17,r,pg-13,pg,gornever",
+        "default value": ""
+      },
+      {
+        "argument": "rating_tv_shows",
+        "type": "String",
+        "description": "Optional. Values can beallow,tv-ma,tv-14,tv-pg,tv-g,tv-y7,tv-yornever",
+        "default value": ""
+      },
+      {
+        "argument": "rating_apps",
+        "type": "String",
+        "description": "Values can beallow,17+,12+,9+,4+,never",
+        "default value": ""
+      },
+      {
+        "argument": "allow_airdrop",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_app_cellular_data_modification",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_app_removal",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_bookstore",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_touchId_modify",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allow_chat",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_game_center",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_host_pairing",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_ui_configuration_profile_installation",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_podcasts",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_definition_lookup",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_predictive_keyboard",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_auto_correction",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_spell_check",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_music_service",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_radio_service",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_news",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_ui_app_installation",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_keyboard_shortcuts",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_paired_watch",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_account_modification",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_erase_content_and_settings",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_assistant_user_generated_content",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_find_my_friends_modification",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "force_assistant_profanity_filter",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allow_spotlight_internet_results",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_enabling_restrictions",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_passcode_modification",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_device_name_modification",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_wallpaper_modification",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_notifications_modification",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "Allow_automatic_app_downloads",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "autonomous_single_apps",
+        "type": "Integer array",
+        "description": "Optional. Can contain IDs of the iOS apps",
+        "default value": "An empty list"
+      },
+      {
+        "argument": "filter_type",
+        "type": "String",
+        "description": "Required. Values can be white_list or black_list",
+        "default value": ""
+      },
+      {
+        "argument": "auto_filter_enabled",
+        "type": "Boolean",
+        "description": "Optional. Use only when filter_type is black_list",
+        "default value": "false"
+      },
+      {
+        "argument": "permitted_urls",
+        "type": "String array",
+        "description": "Optional. Used only when auto_filter_enabled is true. Otherwise, this field is ignored",
+        "default value": ""
+      },
+      {
+        "argument": "blacklisted_urls",
+        "type": "String array",
+        "description": "Optional. Array of URLs. Use only when filter_type is black_list. Otherwise, this field is ignored",
+        "default value": ""
+      },
+      {
+        "argument": "whitelist_urls",
+        "type": "String array",
+        "description": "Optional. Array of URLs. Use only when filter_type is white_list. Otherwise, this field is ignored",
+        "default value": ""
+      },
+      {
+        "argument": "service_set_identifier",
+        "type": "String",
+        "key": "Required"
+      },
+      {
+        "argument": "autojoin",
+        "type": "Boolean",
+        "key": "Optional"
+      },
+      {
+        "argument": "hidden_network",
+        "type": "Boolean",
+        "key": "Optional"
+      },
+      {
+        "argument": "security_type",
+        "type": "String",
+        "key": "Required. The possible values areNone,wep,wpa,any,WEP_Enterprise,WPA_Enterprise,Any_Enterprise,eap"
+      },
+      {
+        "argument": "proxy_type",
+        "type": "String",
+        "key": "Optional. Valid values areNone,ManualandAuto"
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "key": "Required"
+      },
+      {
+        "argument": "user_name",
+        "type": "String",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "user_password",
+        "type": "String",
+        "description": "Required if use_per_connection_pwd is set to false",
+        "default value": ""
+      },
+      {
+        "argument": "use_per_connection_pwd",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "tls",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "leap",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "ttls",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "peap",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "eap_fast",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "eap_sim",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "provision_pac",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "provision_pac_anonymously",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "use_pac",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "inner_authentication",
+        "type": "String",
+        "description": "Optional. The possible values arePAP,CHAP,MSCHAP,MSCHAPv2",
+        "default value": "PAP"
+      },
+      {
+        "argument": "outer_identity",
+        "type": "String",
+        "description": "Optional.",
+        "default value": "None"
+      },
+      {
+        "argument": "proxyserver",
+        "type": "String",
+        "description": "Required. The proxy server’s network address"
+      },
+      {
+        "argument": "proxy_server_port",
+        "type": "Integer",
+        "description": "Required. The proxy server’s port"
+      },
+      {
+        "argument": "proxy_user_name",
+        "type": "String",
+        "description": "Required. Username used to authenticate the proxy server"
+      },
+      {
+        "argument": "proxy_password",
+        "type": "String",
+        "description": "Required. Password used to authenticate proxyserver"
+      },
+      {
+        "argument": "proxy_pac_url",
+        "type": "String",
+        "description": "Required. The URL of the PAC file that defines the proxy configuration"
+      },
+      {
+        "argument": "account_description",
+        "type": "String",
+        "description": "Required. User visible description of the email account",
+        "default value": ""
+      },
+      {
+        "argument": "user_display_name",
+        "type": "String",
+        "description": "Required. Username of the account. Use%name%for user’s name",
+        "default value": ""
+      },
+      {
+        "argument": "account_type",
+        "type": "String",
+        "description": "Required. The possible values arePOPandIMAP",
+        "default value": ""
+      },
+      {
+        "argument": "imap_path_prefix",
+        "type": "String",
+        "description": "Optional. Required ifaccount_typeis set toIMAP",
+        "default value": ""
+      },
+      {
+        "argument": "email_address",
+        "type": "String",
+        "description": "Required. The email address for the account. Use%email%for user’s email",
+        "default value": ""
+      },
+      {
+        "argument": "allow_move",
+        "type": "Boolean",
+        "description": "Required. The email address for the account. Use%email%for user’s email",
+        "default value": "false"
+      },
+      {
+        "argument": "incoming_server_host_name",
+        "type": "String",
+        "description": "Required. The email address for the account. Use%email%for user’s email",
+        "default value": ""
+      },
+      {
+        "argument": "incoming_server_port",
+        "type": "Integer",
+        "description": "Required. The email address for the account. Use%email%for user’s email",
+        "default value": "143"
+      },
+      {
+        "argument": "incoming_server_username",
+        "type": "String",
+        "description": "Required. Use%username%for username",
+        "default value": ""
+      },
+      {
+        "argument": "incoming_server_auth",
+        "type": "String",
+        "description": "Required. Possible values areNone,Password,MD5,NTLMandHTTP",
+        "default value": ""
+      },
+      {
+        "argument": "incoming_password",
+        "type": "String",
+        "description": "Required ifincoming_server_authis notNone",
+        "default value": ""
+      },
+      {
+        "argument": "incoming_server_use_ssl",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "out_server_host_name",
+        "type": "String",
+        "description": "Required. Outgoing mail server host name",
+        "default value": ""
+      },
+      {
+        "argument": "out_server_port",
+        "type": "Integer",
+        "description": "Required",
+        "default value": "587"
+      },
+      {
+        "argument": "out_server_username",
+        "type": "Integer",
+        "description": "Required. Value can benull. Use%username%for username",
+        "default value": ""
+      },
+      {
+        "argument": "out_server_auth",
+        "type": "String",
+        "description": "Required. Possible values areNone,Password,MD5,NTLMandHTTP",
+        "default value": ""
+      },
+      {
+        "argument": "out_pwd_as_incoming_pwd",
+        "type": "Boolean",
+        "description": "Required ifout_server_authis notNone",
+        "default value": ""
+      },
+      {
+        "argument": "out_password",
+        "type": "String",
+        "description": "Required ifout_pwd_as_incoming_pwdis set tofalse",
+        "default value": ""
+      },
+      {
+        "argument": "allow_recent_syncing",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "mail_app_only",
+        "type": "Boolean",
+        "description": "Optional. Use only in mail",
+        "default value": ""
+      },
+      {
+        "argument": "out_server_use_ssl",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "smime_enabled",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "account_name",
+        "type": "String",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "host_name",
+        "type": "Boolean",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "allow_move",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "recent_address_syncing",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "mail_app_only",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "use_ssl",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "smime_enabled",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "domain",
+        "type": "String",
+        "description": "Required. Value can be blank. Use%domain%for user’s domain",
+        "default value": "false"
+      },
+      {
+        "argument": "username",
+        "type": "String",
+        "description": "Required. Use%username%for username and%email%for user’s email address",
+        "default value": "false"
+      },
+      {
+        "argument": "email_address",
+        "type": "String",
+        "description": "Required. Use%email%for user’s email address",
+        "default value": "false"
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Optional. Value can benull",
+        "default value": "false"
+      },
+      {
+        "argument": "no_past_days_to_sync",
+        "type": "Integer",
+        "description": "Optional. Possible values are0,1,3,7,14,31",
+        "default value": "3"
+      },
+      {
+        "argument": "cert_compatible_ios4",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "account_name",
+        "type": "String",
+        "description": "Required. Visible description of the LDAP account. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "host_name",
+        "type": "String",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "username",
+        "type": "String",
+        "description": "Required. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Required. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "use_ssl",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "account_name",
+        "type": "String",
+        "description": "Required. Visible description of the LDAP account. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "hostname",
+        "type": "String",
+        "description": "Required. Host name of the account",
+        "default value": ""
+      },
+      {
+        "argument": "username",
+        "type": "String",
+        "description": "Required. Username of the account. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Required. Password of the account. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "use_ssl",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "port",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "80"
+      },
+      {
+        "argument": "principal_url",
+        "type": "String",
+        "description": "Required. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "account_name",
+        "type": "String",
+        "description": "Required. Visible info about the account. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "url",
+        "type": "String",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "username",
+        "type": "String",
+        "description": "Required. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Required. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "use_ssl",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "account_name",
+        "type": "String",
+        "description": "Required. Visible description. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "host_name",
+        "type": "String",
+        "description": "Required.",
+        "default value": ""
+      },
+      {
+        "argument": "username",
+        "type": "String",
+        "description": "Required. Username of the account. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Required. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "use_ssl",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "port",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "8443"
+      },
+      {
+        "argument": "principal_url",
+        "type": "String",
+        "description": "Required. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "label",
+        "type": "String",
+        "description": "Required. Name of the webclip",
+        "default value": ""
+      },
+      {
+        "argument": "is_removable",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "url",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": ""
+      },
+      {
+        "argument": "precomposed_icon",
+        "type": "Boolean",
+        "description": "Required",
+        "default value": "false"
+      },
+      {
+        "argument": "fullscreen_icon",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "icon",
+        "type": "String",
+        "description": "Required. Base64 encoded image",
+        "default value": ""
+      },
+      {
+        "argument": "apn_name",
+        "type": "String",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "apn_username",
+        "type": "String",
+        "description": "Required. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "apn_password",
+        "type": "String",
+        "description": "Required. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_server",
+        "type": "String",
+        "description": "Optional. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_server_port",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "0"
+      },
+      {
+        "argument": "app",
+        "type": "Integer",
+        "description": "Required. App ID",
+        "default value": ""
+      },
+      {
+        "argument": "disable_touch",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "disable_device_rotation",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "disable_volume_buttons",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "disable_ringer_switch",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "disable_sleep_wake_button",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "disable_auto_lock",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "enable_voice_over",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "enable_zoom",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "enable_invert_colors",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "enable_assistive_touch",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "enable_speak_selection",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "voice_over",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "zoom",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "invert_colors",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "assistive_touch",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "home_screen_wallpaper",
+        "type": "Integer",
+        "description": "Required. Base64 encoded image."
+      },
+      {
+        "argument": "lock_screen_wallpaper",
+        "type": "Boolean",
+        "description": "Required. Base64 encoded image. Value can be null"
+      },
+      {
+        "argument": "proxy_type",
+        "type": "String",
+        "description": "Required. Values can beManual,Auto",
+        "default value": ""
+      },
+      {
+        "argument": "proxyserver",
+        "type": "String",
+        "description": "Required whenproxy_typeis set toManual",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_server_port",
+        "type": "String",
+        "description": "Required whenproxy_typeis set toManual",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_user_name",
+        "type": "String",
+        "description": "Required whenproxy_typeis set toManual. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_password",
+        "type": "String",
+        "description": "Required whenproxy_typeis set toManual. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_pac_url",
+        "type": "String",
+        "description": "Required whenproxy_typeis set toAuto",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_pac_fallback_allowed",
+        "type": "Boolean",
+        "description": "",
+        "default value": "false"
+      },
+      {
+        "argument": "proxy_captive_login_allowed",
+        "type": "Boolean",
+        "description": "",
+        "default value": "false"
+      },
+      {
+        "argument": "lock_screen_footnote",
+        "type": "String",
+        "description": "Required. Value can be null"
+      },
+      {
+        "argument": "asset_tag_information",
+        "type": "String",
+        "description": "Required. Value can be null"
+      },
+      {
+        "argument": "whitelist_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "blacklist_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "mandatory_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "catalogues",
+        "type": "List / Array",
+        "description": "Optional. List of integers representing the corresponding catalogue IDs."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Android Policies",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/policies/android-policies/",
+    "category": "Policies",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "passcode_requirement",
+        "type": "String",
+        "description": "Optional.Possible values can besimple,numbers,alphanumeric,alphabet,complexvalue",
+        "default value": "simple"
+      },
+      {
+        "argument": "min_password_complexity",
+        "type": "String",
+        "description": "Optional. Possible values can benone,low,medium,high",
+        "default value": "low"
+      },
+      {
+        "argument": "min_length",
+        "type": "Integer",
+        "description": "Optional. Possible values are from4 to 16. Ignored ifpasscode_requirementis set tosimpleornumbers",
+        "default value": ""
+      },
+      {
+        "argument": "max_pinage_in_days",
+        "type": "Integer",
+        "description": "Optional. Specifies the number of days for which the passcode can remain unchanged. Minimum value is1and maximum value is730",
+        "default value": ""
+      },
+      {
+        "argument": "max_inactivity",
+        "type": "Integer",
+        "description": "Optional. Possible values are1,2,3,4,5,10and15",
+        "default value": ""
+      },
+      {
+        "argument": "pin_history",
+        "type": "Integer",
+        "description": "Optional. Possible values are from1to50",
+        "default value": ""
+      },
+      {
+        "argument": "max_failed_attempts",
+        "type": "Integer",
+        "description": "Optional. Possible values are from4to10",
+        "default value": ""
+      },
+      {
+        "argument": "min_uppercase_letters",
+        "type": "Integer",
+        "description": "Optional. Possible values are from1to5"
+      },
+      {
+        "argument": "min_lowercase_letters",
+        "type": "Integer",
+        "description": "Optional. Possible values are from1to5"
+      },
+      {
+        "argument": "min_non_alphapets",
+        "type": "Integer",
+        "description": "Optional. Possible values are from1to5"
+      },
+      {
+        "argument": "min_num_letters",
+        "type": "Integer",
+        "description": "Optional. Possible values are from1to5"
+      },
+      {
+        "argument": "min_symbols",
+        "type": "Integer",
+        "description": "Optional. Possible values are from1to5"
+      },
+      {
+        "argument": "allow_camera",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_usb_mass_storage",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_network_time",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_wifi",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "enforce_wifi",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_bluetooth",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_data_network",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_bgdata_sync",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_auto_background_sync",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_mobile_app",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_usb_tethering",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_mock_locations",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_wireless_location",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_gps_location",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_non_google_app",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "enforce_app_verification",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_backup_google",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_auto_restore",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_roaming",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "enforce_device_encrypt",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "disable_keyguard",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_password_visible",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "enforce_gps_location",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_mdm_removal",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "service_set_identifier",
+        "type": "String",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "autojoin",
+        "type": "Boolean",
+        "description": "",
+        "default value": "true"
+      },
+      {
+        "argument": "hidden_network",
+        "type": "Boolean",
+        "description": "",
+        "default value": "false"
+      },
+      {
+        "argument": "security_type",
+        "type": "String",
+        "description": "Required. Possible values arenone,wep,wpa,eap",
+        "default value": ""
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Required ifsecurity_typeis set toweporwpa",
+        "default value": ""
+      },
+      {
+        "argument": "eap_type",
+        "type": "String",
+        "description": "Required ifsecurity_typeis set toeap. Possible values arepeap,ttls,pwd",
+        "default value": ""
+      },
+      {
+        "argument": "user_name",
+        "type": "String",
+        "description": "Required ifsecurity_typeis set toeap",
+        "default value": ""
+      },
+      {
+        "argument": "enterprise_password",
+        "type": "String",
+        "description": "Optional. Value can be set to null",
+        "default value": ""
+      },
+      {
+        "argument": "phase2_authentication",
+        "type": "String",
+        "description": "Required ifeap_typeis set topeap. Possible values areNone,PAP,MSCHAP,MSCHAPv2,GTC",
+        "default value": ""
+      },
+      {
+        "argument": "outer_identity",
+        "type": "String",
+        "description": "Required ifeap_typeis set topeap.",
+        "default value": ""
+      },
+      {
+        "argument": "account_name",
+        "type": "String",
+        "description": "Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "account_description",
+        "type": "String",
+        "description": "Required. Account description",
+        "default value": ""
+      },
+      {
+        "argument": "incoming_account_type",
+        "type": "String",
+        "description": "Optional. Possible values arepop3andimap",
+        "default value": "pop3"
+      },
+      {
+        "argument": "email_address",
+        "type": "String",
+        "description": "Optional. Email address for the account. Value can be set to null",
+        "default value": ""
+      },
+      {
+        "argument": "incoming_server_host_name",
+        "type": "String",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "incoming_server_port",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "143"
+      },
+      {
+        "argument": "incoming_server_username",
+        "type": "Integer",
+        "description": "Optional. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "incoming_password",
+        "type": "String",
+        "description": "Optional. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "incoming_server_use_ssl",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "incoming_server_use_tls",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "incoming_server_use_certificate",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "out_account_type",
+        "type": "Boolean",
+        "description": "Required. Possible values arepop3andsmtp",
+        "default value": ""
+      },
+      {
+        "argument": "out_server_host_name",
+        "type": "String",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "out_server_port",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "587"
+      },
+      {
+        "argument": "out_server_username",
+        "type": "String",
+        "description": "Optional. Outgoing username for the email. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "out_password",
+        "type": "String",
+        "description": "Optional. Password for account authentication. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "out_server_use_ssl",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "out_server_use_tls",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "out_server_use_certificate",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "account_name",
+        "type": "String",
+        "description": "Optional. Visible account description",
+        "default value": ""
+      },
+      {
+        "argument": "host",
+        "type": "String",
+        "description": "Required. Exchange ActiveSync Host",
+        "default value": ""
+      },
+      {
+        "argument": "domain",
+        "type": "String",
+        "description": "Optional. Use%domain%as user’s domain. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "email_address",
+        "type": "String",
+        "description": "Required. Email address for the account. Use%email%for users’ email address.",
+        "default value": ""
+      },
+      {
+        "argument": "username",
+        "type": "String",
+        "description": "Required. Use%username%for the username",
+        "default value": ""
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Optional. Value can be null",
+        "default value": ""
+      },
+      {
+        "argument": "no_past_days_to_sync",
+        "type": "String",
+        "description": "Optional. Possible values areauto,manual,15,30,60,120,240",
+        "default value": "auto"
+      },
+      {
+        "argument": "use_ssl",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "apps",
+        "type": "Array",
+        "description": "Optional. Apps array have dictionaries which contain keysidwhose value is the app ID andhidewhose value is boolean",
+        "default value": ""
+      },
+      {
+        "argument": "toggle_wifi",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_wifi",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "enable_hexnode_browser",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "auto_launch_app",
+        "type": "Integer",
+        "description": "Optional. ID of app added in apps. Ignored if apps key is missing",
+        "default value": ""
+      },
+      {
+        "argument": "auto_launch_delay",
+        "type": "Integer",
+        "description": "Optional. Delay in seconds. Ignored if apps key is missing",
+        "default value": ""
+      },
+      {
+        "argument": "allow_change_brightness",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "brightness_level",
+        "type": "Integer",
+        "description": "Required ifallow_change_brightnessis set tofalse",
+        "default value": "0"
+      },
+      {
+        "argument": "keep_screen_on",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allow_bluetooth",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_user_location_checkin",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "kiosk_manual_exit",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "kiosk_password",
+        "type": "String",
+        "description": "Optional. If this field is not configured, set to null, or given an empty string (“”), the value specified underAdmin > General Settings > Global Exit Settingscan be used to exit kiosk mode.",
+        "default value": ""
+      },
+      {
+        "argument": "exit_passcode_tap_count",
+        "type": "Integer",
+        "description": "Required ifkiosk_manual_exitis set to true. Specify the number of taps to display the popup to enter the exit passcode. The entered value should be between 5 and 15.",
+        "default value": "10"
+      },
+      {
+        "argument": "exit_kiosk_with_app_open",
+        "type": "Boolean",
+        "description": "Optional. Specify if the user can exit manually from kiosk mode while an app is open.",
+        "default value": "false"
+      },
+      {
+        "argument": "exit_kiosk_after_reboot",
+        "type": "Boolean",
+        "description": "Optional. Allows exiting kiosk mode during launch delay after a reboot. Users can exit the kiosk mode by tapping on the kiosk home screen and entering the local/global exit passcode during this launch delay.",
+        "default value": "false"
+      },
+      {
+        "argument": "relaunch_app",
+        "type": "Integer",
+        "description": "Required, ifexit_kiosk_after_rebootis set true. Specify the time in seconds after which the app relaunches itself in kiosk mode.",
+        "default value": "20"
+      },
+      {
+        "argument": "mobile_wallpaper",
+        "type": "String",
+        "description": "Required. Base64 image",
+        "default value": ""
+      },
+      {
+        "argument": "tablet_wallpaper",
+        "type": "String",
+        "description": "Required. Base64 image",
+        "default value": ""
+      },
+      {
+        "argument": "whitelist_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "blacklist_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "mandatory_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "catalogues",
+        "type": "List / Array",
+        "description": "Optional. List of integers representing the corresponding catalogue IDs."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "macOS Policies",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/policies/macos-policies/",
+    "category": "Policies",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "allow_simple",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "true"
+      },
+      {
+        "argument": "require_alphanumeric",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "change_at_next_auth",
+        "type": "Boolean",
+        "description": "Optional. The option to enforce password change in the next login.",
+        "default value": "false"
+      },
+      {
+        "argument": "min_length",
+        "type": "Integer",
+        "description": "Optional. Values can be from 1 to 16.",
+        "default value": ""
+      },
+      {
+        "argument": "min_complex_chars",
+        "type": "Integer",
+        "description": "Optional. Values can be from 1 to 4.",
+        "default value": ""
+      },
+      {
+        "argument": "max_pinage_in_days",
+        "type": "Integer",
+        "description": "Optional. Values can be from 0 to 730. Specifies the maximum number of days the passcode can be used before expiration",
+        "default value": ""
+      },
+      {
+        "argument": "max_inactivity",
+        "type": "String",
+        "description": "Optional.Specifies the maximum period of inactivity before the device locks. Values can be never, 1_mintue, 2_minutes, 3_minutes, 4_minutes, 5_minutes, 10_minutes, or 15_minutes.",
+        "default value": "never"
+      },
+      {
+        "argument": "pin_history",
+        "type": "Integer",
+        "description": "Optional. Values can be from 0 to 50.",
+        "default value": "0"
+      },
+      {
+        "argument": "max_grace_period",
+        "type": "String",
+        "description": "Optional. Values can be none, immediately,1_minute, 5_minutes, 15_minutes, 1_hour, or 4_hours.",
+        "default value": "none"
+      },
+      {
+        "argument": "service_set_identifier",
+        "type": "String",
+        "description": "Required.",
+        "default value": ""
+      },
+      {
+        "argument": "autojoin",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "true"
+      },
+      {
+        "argument": "hidden_network",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "security_type",
+        "type": "String",
+        "description": "Optional. The possible values arenone,WEP,WPA/WPA2,Any*(Personal),WEP_Enterprise,WPA/WPA2_Enterprise, orAny*(Enterprise).",
+        "default value": "Any*(Personal)"
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Required if WEP, WPA/WPA2 or Any*(Personal) is set.",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_type",
+        "type": "String",
+        "description": "Optional. The possible values areNone,ManualorAutomatic.",
+        "default value": "None"
+      },
+      {
+        "argument": "proxyserver",
+        "type": "String",
+        "description": "Required when proxy_type is Manual. The proxy server’s network address."
+      },
+      {
+        "argument": "proxy_server_port",
+        "type": "Integer",
+        "description": "Required when proxy_type is Manual. The proxy server’s port number."
+      },
+      {
+        "argument": "proxy_user_name",
+        "type": "String",
+        "description": "Required when proxy_type is Manual. Username for proxy authentication."
+      },
+      {
+        "argument": "proxy_password",
+        "type": "String",
+        "description": "Required when proxy_type is Manual. Password for proxy authentication."
+      },
+      {
+        "argument": "proxy_pac_url",
+        "type": "String",
+        "description": "Required when proxy_type is Automatic. The URL of the Proxy Auto Configuration (PAC) file."
+      },
+      {
+        "argument": "tls",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "leap",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "eap_fast",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "user_password",
+        "type": "String",
+        "description": "The user password for authentication.",
+        "default value": ""
+      },
+      {
+        "argument": "outer_identity",
+        "type": "String",
+        "description": "The outer identity for authentication.",
+        "default value": ""
+      },
+      {
+        "argument": "inner_authentication",
+        "type": "String",
+        "description": "Available if eap_fast is enabled. The inner authentication method for EAP. Values can be PAP, CHAP, MSCHAP, or MSCHAPv2",
+        "default value": "PAP"
+      },
+      {
+        "argument": "identity_cert_id",
+        "type": "String",
+        "description": "The ID of the identity certificate for authentication.",
+        "default value": ""
+      },
+      {
+        "argument": "provision_pac",
+        "type": "Boolean",
+        "description": "Available if eap_fast is enabled.",
+        "default value": "true"
+      },
+      {
+        "argument": "provision_pac_anonymously",
+        "type": "Boolean",
+        "description": "Available if eap_fast is enabled.",
+        "default value": "false"
+      },
+      {
+        "argument": "user_name",
+        "type": "String",
+        "description": "The username for authentication.",
+        "default value": ""
+      },
+      {
+        "argument": "ttls",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "true"
+      },
+      {
+        "argument": "peap",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "eap_sim",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "use_per_connection_pwd",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "use_pac",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "true"
+      },
+      {
+        "argument": "certificate_id",
+        "type": "String",
+        "description": "Required when machine_authentication is a certificate.",
+        "default value": ""
+      },
+      {
+        "argument": "account",
+        "type": "String",
+        "description": "Optional. The username for the connection.",
+        "default value": ""
+      },
+      {
+        "argument": "connection_name",
+        "type": "String",
+        "description": "Optional.",
+        "default value": ""
+      },
+      {
+        "argument": "connection_type",
+        "type": "String",
+        "description": "Optional. Values can be L2TP, PPTP, IPSec(Cisco), Cisco_AnyConnect, Juniper_SSL, F5_SSL, SonicWALL_Mobile_Connect, Aruba_VIA, Check_Point_Mobile_VPN and Open_VPN.",
+        "default value": "L2TP"
+      },
+      {
+        "argument": "encryption_level",
+        "type": "String",
+        "description": "Available when the connection type is PPTP. Values can be None, Automatic, or Maximum(128_bit).",
+        "default value": "None"
+      },
+      {
+        "argument": "group",
+        "type": "String",
+        "description": "Specifies group information. Available when the connection type is Cisco_AnyConnect."
+      },
+      {
+        "argument": "identifier",
+        "type": "String",
+        "description": "Optional. Specifies the identifier for the connection.",
+        "default value": ""
+      },
+      {
+        "argument": "include_user_pin",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "ipsec_account",
+        "type": "String",
+        "description": "Optional. The IPSec account information.",
+        "default value": ""
+      },
+      {
+        "argument": "ipsec_auth_password",
+        "type": "String",
+        "description": "Optional. The password for IPSec authentication.",
+        "default value": ""
+      },
+      {
+        "argument": "ipsec_certificate_id",
+        "type": "String",
+        "description": "Optional. The ID of the IPSec certificate.",
+        "default value": ""
+      },
+      {
+        "argument": "ipsec_group_name",
+        "type": "String",
+        "description": "Optional.",
+        "default value": ""
+      },
+      {
+        "argument": "ipsec_shared_secret",
+        "type": "String",
+        "description": "Optional.",
+        "default value": ""
+      },
+      {
+        "argument": "l2tp_account",
+        "type": "String",
+        "description": "Optional. The L2TP account information.",
+        "default value": ""
+      },
+      {
+        "argument": "l2tp_password",
+        "type": "String",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "l2tp_server",
+        "type": "String",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "l2tp_shared_secret",
+        "type": "String",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "l2tp_user_authentication",
+        "type": "String",
+        "description": "The authentication method for an L2TP user. Values can be‘RSA_SecureID’, or ‘Password’.",
+        "default value": "‘RSA_SecureID’"
+      },
+      {
+        "argument": "l2tp_user_authentication_method",
+        "type": "Integer",
+        "description": "Optional.",
+        "default value": "1"
+      },
+      {
+        "argument": "login_group",
+        "type": "String",
+        "description": "Required when the connection type is SONIC_WALL_Mobile_Connect. Specifies the login group information.",
+        "default value": ""
+      },
+      {
+        "argument": "machine_authentication",
+        "type": "String",
+        "description": "Required when the connection type is IPSec(Cisco). The type of machine authentication. Values can be certificate, or shared_secret/group_name",
+        "default value": "shared_secret/group_name."
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Optional. The password for authentication.",
+        "default value": ""
+      },
+      {
+        "argument": "prompt_for_password",
+        "type": "String",
+        "description": "Optional.",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_pac_url",
+        "type": "String",
+        "description": "Required when proxy_type is Automatic",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_password",
+        "type": "String",
+        "description": "Available when proxy_type is Manual",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_server_port",
+        "type": "Integer",
+        "description": "Required when proxy_type is Manual",
+        "default value": ""
+      },
+      {
+        "argument": "proxy_type",
+        "type": "String",
+        "description": "Values can be ‘None’, ‘Manual’ or ‘Automatic’.",
+        "default value": "‘None’"
+      },
+      {
+        "argument": "proxy_user_name",
+        "type": "String",
+        "description": "Available when proxy_type is Manual. Specifies the username for proxy authentication",
+        "default value": ""
+      },
+      {
+        "argument": "proxyserver",
+        "type": "String",
+        "description": "Required when proxy_type is Manual. The server address of proxy.",
+        "default value": ""
+      },
+      {
+        "argument": "realm",
+        "type": "String",
+        "description": "Optional. Specifies the realm information.",
+        "default value": ""
+      },
+      {
+        "argument": "remote_address",
+        "type": "String",
+        "description": "Optional. Specifies the remote address for the connection.",
+        "default value": ""
+      },
+      {
+        "argument": "role",
+        "type": "String",
+        "description": "Optional.Specifies the role information",
+        "default value": ""
+      },
+      {
+        "argument": "send_all_traffic",
+        "type": "Boolean",
+        "description": "Optional. The option to enable sending of all traffic through the connection.",
+        "default value": "false"
+      },
+      {
+        "argument": "server",
+        "type": "String",
+        "description": "Optional. Specifies the server information.",
+        "default value": ""
+      },
+      {
+        "argument": "use_hybrid_authentication",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "user_authentication_type",
+        "type": "String",
+        "description": "Optional. Values can be ‘password’ or ‘certificate’.",
+        "default value": ""
+      },
+      {
+        "argument": "enable_vpn_ondemand",
+        "type": "Integer",
+        "description": "Optional.",
+        "default value": "0"
+      },
+      {
+        "argument": "http_enable",
+        "type": "Integer",
+        "description": "Optional.",
+        "default value": "0"
+      },
+      {
+        "argument": "https_enable",
+        "type": "Integer",
+        "description": "Optional.",
+        "default value": "0"
+      },
+      {
+        "argument": "proxy_autoconfig",
+        "type": "String",
+        "description": "Optional.",
+        "default value": ""
+      },
+      {
+        "argument": "https_proxyserver",
+        "type": "String",
+        "description": "Optional. Specifies the server address of the HTTPS proxy server.",
+        "default value": ""
+      },
+      {
+        "argument": "https_proxy_server_port",
+        "type": "Integer",
+        "description": "Optional. Specifies the port number of the HTTPS proxy server.",
+        "default value": ""
+      },
+      {
+        "argument": "connection_sub_type",
+        "type": "String",
+        "description": "Optional.",
+        "default value": ""
+      },
+      {
+        "argument": "auth_protocol",
+        "type": "Boolean",
+        "description": "Optional. The option to enable authentication protocol.",
+        "default value": "false"
+      },
+      {
+        "argument": "auth_plugins",
+        "type": "Boolean",
+        "description": "Optional. The option to enable authentication plugins.",
+        "default value": "false"
+      },
+      {
+        "argument": "token_key",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "ipsec_auth_enabled",
+        "type": "Integer",
+        "description": "Optional.",
+        "default value": "1"
+      },
+      {
+        "argument": "local_identifier_type",
+        "type": "String",
+        "description": "Optional.",
+        "default value": ""
+      },
+      {
+        "argument": "firewall_enabled",
+        "type": "String",
+        "description": "Optional. Values can be allow_incoming_connections or block_incoming_connections",
+        "default value": "allow_incoming_connections"
+      },
+      {
+        "argument": "Enable_Firewall",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "Block_AllIncoming",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "Enable_StealthMode",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "application",
+        "type": "Array",
+        "description": "Optional. The application details to be included in Firewall. The details should be in the following format [{app_name:”, app_id:”, identifier:”}].",
+        "default value": ""
+      },
+      {
+        "argument": "preventfromdisabled",
+        "type": "Boolean",
+        "description": "Optional. The option to prevent users from turning off FileVault encryption on the device.",
+        "default value": "false"
+      },
+      {
+        "argument": "escrow_recovery_key",
+        "type": "Boolean",
+        "description": "Optional. The option to encrypt the key with a certificate and escrow it to Hexnode for safekeeping.",
+        "default value": "false"
+      },
+      {
+        "argument": "preventfromenabled",
+        "type": "Boolean",
+        "description": "Optional. The option to prevent users from turning on FileVault encryption on the device.",
+        "default value": "false"
+      },
+      {
+        "argument": "escrow_encryption-key_manual",
+        "type": "Boolean",
+        "description": "Optional. The possible value is allow_hexnode_to_automatically_to_encrypt_and_decrypt_the_recovery_key.",
+        "default value": "allow_hexnode_to_automatically_to_encrypt_and_decrypt_the_recovery_key"
+      },
+      {
+        "argument": "unlock_hibernation",
+        "type": "Boolean",
+        "description": "Optional.The option to enforce the use of the device password for unlocking FileVault after hibernation and for restoring the disk to its most recent saved state.",
+        "default value": "false"
+      },
+      {
+        "argument": "max_bypass_attempt",
+        "type": "Integer",
+        "description": "Optional.",
+        "default value": "0"
+      },
+      {
+        "argument": "enable_bypassing",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "encryption_type",
+        "type": "String",
+        "description": "Optional. The possible values are institutional_recovery_key, personal_recovery_key, or institutional_and_personal_recovery_key.",
+        "default value": "institutional_and_personal_recovery_key"
+      },
+      {
+        "argument": "escrow_local_desc",
+        "type": "String",
+        "description": "Optional.The description for escrow local.",
+        "default value": ""
+      },
+      {
+        "argument": "show_recovery_key",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "true"
+      },
+      {
+        "argument": "selected_cert_id",
+        "type": "Integer",
+        "description": "Optional.",
+        "default value": "2"
+      },
+      {
+        "argument": "escrow_message",
+        "type": "String",
+        "description": "Optional."
+      },
+      {
+        "argument": "enable_filevault",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "true"
+      },
+      {
+        "argument": "escrow_encrypt_key_cert",
+        "type": "String",
+        "description": "Optional.",
+        "default value": "None"
+      },
+      {
+        "argument": "enter_missing_info",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "true"
+      },
+      {
+        "argument": "ask_at_logout",
+        "type": "Boolean",
+        "description": "Optional. The option to define the maximum number of times a user can bypass the prompt to enable FileVault when logging into the device.",
+        "default value": "true"
+      },
+      {
+        "argument": "allow_system_user_overrides",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allowed_system_teamids",
+        "type": "Array",
+        "description": "Optional. The team identifiers should be specified within []",
+        "default value": ""
+      },
+      {
+        "argument": "allowed_system_extensions",
+        "type": "Object",
+        "description": "Optional. The system extensions should be specified within {}.",
+        "default value": ""
+      },
+      {
+        "argument": "allowed_system_extension_type",
+        "type": "Object",
+        "description": "Optional. The system extension types should be specified within {}.",
+        "default value": ""
+      },
+      {
+        "argument": "allow_user_overrides",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allowed_kernel_extensions",
+        "type": "Object",
+        "description": "Optional. The kernel extensions should be specified within {}."
+      },
+      {
+        "argument": "allowed_teamids",
+        "type": "String",
+        "description": "Optional. The team identifiers should be specified within [].",
+        "default value": ""
+      },
+      {
+        "argument": "whitelist_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "blacklist_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "mandatory_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "catalogues",
+        "type": "List / Array",
+        "description": "Optional. List of integers representing the corresponding catalogue IDs."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Windows Policies",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/policies/windows-policies/",
+    "category": "Policies",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "allow_simple",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "true"
+      },
+      {
+        "argument": "require_alphanumeric",
+        "type": "String",
+        "description": "Optional.Values can bealphanumeric,numericoruser_can_choose.",
+        "default value": "user_can_choose"
+      },
+      {
+        "argument": "min_length",
+        "type": "Integer",
+        "description": "Optional. Values can be from 4 to 16.",
+        "default value": ""
+      },
+      {
+        "argument": "min_complex_chars",
+        "type": "String",
+        "description": "Optional. Values can bedigits_only,digits_lower_lettersordigits_lower_upper_letters.",
+        "default value": "digits_only"
+      },
+      {
+        "argument": "max_pinage_in_days",
+        "type": "Integer",
+        "description": "Optional. Values can be from0to730.",
+        "default value": ""
+      },
+      {
+        "argument": "max_inactivity",
+        "type": "Integer",
+        "description": "Optional. Values can be from0to999",
+        "default value": ""
+      },
+      {
+        "argument": "pin_history",
+        "type": "Integer",
+        "description": "Optional. Possible values are from0to24",
+        "default value": ""
+      },
+      {
+        "argument": "max_failed_attempts",
+        "type": "Integer",
+        "description": "Optional.",
+        "default value": ""
+      },
+      {
+        "argument": "service_set_identifier",
+        "type": "String",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "connection_mode",
+        "type": "String",
+        "description": "Optional. Values can be Auto, Manual.",
+        "default value": "Auto"
+      },
+      {
+        "argument": "non_broadcast",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "security_type",
+        "type": "String",
+        "description": "Required. Possible values areopen,WEP,WPA-PSK/WPA2-PSK,WPA/WPA2 enterprise",
+        "default value": "open"
+      },
+      {
+        "argument": "proxy_type",
+        "type": "String",
+        "description": "Optional. Values can be None and Manual",
+        "default value": "None"
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Required",
+        "default value": ""
+      },
+      {
+        "argument": "authentication",
+        "type": "String",
+        "description": "Required if WPA-PSK/WPA2-PSK, or WPA/WPA2 enterprise is set. Values can be WPA, WPA2, or open.",
+        "default value": "open"
+      },
+      {
+        "argument": "eap_type",
+        "type": "String",
+        "description": "Required ifsecurity_typeis set toWPA/WPA2. Values can bePEAP-MSCHAPv2orEAP TLS",
+        "default value": "EAP TLS"
+      },
+      {
+        "argument": "proxyserver",
+        "type": "String",
+        "description": "Required. The proxy server’s network address."
+      },
+      {
+        "argument": "proxy_server_port",
+        "type": "Integer",
+        "description": "Required. The proxy server’s port number."
+      },
+      {
+        "argument": "nativeprotocoltype",
+        "type": "String",
+        "description": "Values can beL2TP,PPTP, orIKEv2.",
+        "default value": "L2TP"
+      },
+      {
+        "argument": "profilename",
+        "type": "String",
+        "description": "Required. Specifies the profile name for the VPN connection.",
+        "default value": ""
+      },
+      {
+        "argument": "server",
+        "type": "String",
+        "description": "Required. Specifies the server address for the VPN connection.",
+        "default value": ""
+      },
+      {
+        "argument": "advanceconnection",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "routelist",
+        "type": "Array",
+        "description": "Required if advanceconnection is true. Specifies the list of routes for the VPN connection.",
+        "default value": ""
+      },
+      {
+        "argument": "domainnameinfolist",
+        "type": "Array",
+        "description": "Required if advanceconnection is true. Specifies the list of domain names for the VPN connection.",
+        "default value": ""
+      },
+      {
+        "argument": "routingpolicytype",
+        "type": "String",
+        "description": "Required if advanceconnection is true. Specifies the routing policy type for VPN connection. Values can beallows_traffic_through_vpn_and_local_network_connection or force_all_traffic_through_vpn",
+        "default value": "allows_traffic_through_vpn_and_local_network_connection"
+      },
+      {
+        "argument": "proxytype",
+        "type": "String",
+        "description": "Optional. Values can benone, manual or auto_detect.",
+        "default value": "none"
+      },
+      {
+        "argument": "proxyserver",
+        "type": "String",
+        "description": "Required if proxytype is manual. Specifies the proxy server for the VPN connection.",
+        "default value": ""
+      },
+      {
+        "argument": "proxyurl",
+        "type": "String",
+        "description": "Required if proxytype is auto_detect. Specifies the proxy server for the VPN connection.",
+        "default value": ""
+      },
+      {
+        "argument": "connprcol",
+        "type": "String",
+        "description": "Required if connection type is IKEv2. Specifies the connection protocol for the VPN connection. Values can be EAP or machine_certificate.",
+        "default value": "EAP"
+      },
+      {
+        "argument": "userauth",
+        "type": "String",
+        "description": "The user authentication type for the VPN connection. Values can be password or shared_secret.",
+        "default value": "password"
+      },
+      {
+        "argument": "presharedkey",
+        "type": "String",
+        "description": "Required if the connection type is L2TP. The pre-shared key for the VPN connection.",
+        "default value": ""
+      },
+      {
+        "argument": "traficfiltriplst",
+        "type": "Array",
+        "description": "The list of traffic rules for the VPN connection.",
+        "default value": ""
+      },
+      {
+        "argument": "remembrcredntil",
+        "type": "Boolean",
+        "description": "Optional. The option to remember credentials for the VPN connection.",
+        "default value": "false"
+      },
+      {
+        "argument": "alwayson",
+        "type": "Boolean",
+        "description": "Optional. The option to enable always-on VPN for the connection.",
+        "default value": "false"
+      },
+      {
+        "argument": "bypassforlocal",
+        "type": "Boolean",
+        "description": "Optional. The option to allow local intranet traffic to bypass the VPN connection.",
+        "default value": "false"
+      },
+      {
+        "argument": "trustednetwork",
+        "type": "String",
+        "description": "The trusted network for the VPN connection. Multiple entries should be comma-separated.",
+        "default value": ""
+      },
+      {
+        "argument": "enable_application_guard",
+        "type": "Boolean",
+        "description": "Required.",
+        "default value": "false"
+      },
+      {
+        "argument": "clipboard_settings",
+        "type": "String",
+        "description": "Required. Specifies the clipboard settings for the application guard. Values can becompletely_turn_off_the_clipboard_functionality_for_the_application_guard, turn_on_clipboard_operation_from_an_isolated_session_to_the_host, turn_on_clipboard_operation_from_the_host_to_an_isolated_session, or turn_on_clipboard_operation_in_both_the_directions.",
+        "default value": "completely_turn_off_the_clipboard_functionality_for_the_application_guard"
+      },
+      {
+        "argument": "clipboard_file_type",
+        "type": "String",
+        "description": "Required. Specifies allowed file types for clipboard operations in the application guard. Values can beallow_copying_texts,allow_copying images, orallow_copying_text_and_images.",
+        "default value": "allow_copying_texts"
+      },
+      {
+        "argument": "printing_settings",
+        "type": "Array",
+        "description": "Specifies the printing settings for the application guard.",
+        "default value": ""
+      },
+      {
+        "argument": "block_non_enterprise_content",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "allow_data_persistence",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "allow_virtual_gpu",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "save_files_to_host",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "certificate_thumbprints",
+        "type": "String",
+        "description": "Specifies the certificate thumbprints for the application guard.",
+        "default value": ""
+      },
+      {
+        "argument": "allow_camera_microphone_redirection",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "hide_account_protection_area",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "hide_app_and_browser_protection_area",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "prevent_users_from_modifying_settings",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "hide_device_security_area",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "hide_tpm_firmware_update_recommendation",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "hide_tpm_troubleshooter_page",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "disable_clear_tpm_button",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "hide_secure_boot_area",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "notifications",
+        "type": "String",
+        "description": "Optional. Specifies the notification settings for the application guard. Values can bedisplay_all_notifications, display_only_critical_notifications, or disable_all_notifications.",
+        "default value": "display_all_notifications"
+      },
+      {
+        "argument": "hide_family_options_area",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "hide_device_performance_and_health_area",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "hide_firewall_and_network_protection_area",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "hide_virus_and_threat_protection_area",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "hide_ransomware_data_recovery_area",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "true"
+      },
+      {
+        "argument": "configure_customized_notifications",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "show_customized_contact_information",
+        "type": "Boolean",
+        "description": "Optional",
+        "default value": "false"
+      },
+      {
+        "argument": "contact_company_name",
+        "type": "String",
+        "description": "Required if‘show_customized_contact_information’is true. Specifies the company name for customized contact information in the application guard.",
+        "default value": ""
+      },
+      {
+        "argument": "contact_email",
+        "type": "String",
+        "description": "Required if‘show_customized_contact_information’is true and when ‘contact_phone’ and ‘contact_website’ fields are not specified. Specifies the email address for customized contact information in the application guard.",
+        "default value": ""
+      },
+      {
+        "argument": "contact_phone",
+        "type": "String",
+        "description": "Required if‘show_customized_contact_information’is true. and when ‘contact_email’ and ‘contact_website’ fields are not specified. Specifies the phone number for customized contact information in the application guard.",
+        "default value": ""
+      },
+      {
+        "argument": "contact_website",
+        "type": "String",
+        "description": "Required if‘show_customized_contact_information’is true and when ‘contact_email’ and ‘contact_phone’ fields are not specified. Specifies the website URL for customized contact information in the application guard.",
+        "default value": ""
+      },
+      {
+        "argument": "hide_windows_security_systray",
+        "type": "Boolean",
+        "description": "Optional.",
+        "default value": "false"
+      },
+      {
+        "argument": "whitelist_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "blacklist_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "mandatory_apps",
+        "type": "Dictionary",
+        "description": "Optional. A dictionary containing the explicit keysapp(whose value is a list of app IDs) andgroup(whose value is a list of app group IDs)."
+      },
+      {
+        "argument": "catalogues",
+        "type": "List / Array",
+        "description": "Optional. List of integers representing the corresponding catalogue IDs."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Policy Details",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/policies/policy-details/",
+    "category": "Policies",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Edit Policy",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/policies/edit-policy/",
+    "category": "Policies",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Archive Policy",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/policies/archive-policy/",
+    "category": "Policies",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List app data usage statistics",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/reports/list-app-data-usage-statistics/",
+    "category": "Reports",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameter": "range",
+        "type": "Integer",
+        "description": "Optional",
+        "accepted values": "Values ranging from 1 to 30 where 1 denotestoday."
+      },
+      {
+        "parameter": "startdate & enddate",
+        "type": "Integer",
+        "description": "Optional",
+        "accepted values": "Any date of the formatmmddyyyywith a maximum difference of 90 days between ‘startdate’ and ‘enddate’."
+      },
+      {
+        "parameter": "order_by",
+        "type": "String",
+        "description": "Optional",
+        "accepted values": "totalusage, wifidatausage, mobiledatausage."
+      },
+      {
+        "parameter": "count",
+        "type": "Integer",
+        "description": "Optional",
+        "accepted values": "Values ranging from 1 to 20."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List data usage statistics",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/reports/list-data-usage-statistics/",
+    "category": "Reports",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameter": "range",
+        "type": "Integer",
+        "accepted values": "Values ranging from 1 to 30 where 1 denotestoday."
+      },
+      {
+        "parameter": "startdate & enddate",
+        "type": "Integer",
+        "accepted values": "Any date of the formatmmddyyyywith a maximum difference of 90 days between ‘startdate’ and ‘enddate’."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Authentication",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/setting-up-an-api/authentication/",
+    "category": "Setup",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Retrieve API Key",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/setting-up-an-api/retrieve-api-key/",
+    "category": "Setup",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Status and Error Codes",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/setting-up-an-api/status-and-error-codes/",
+    "category": "Setup",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "status": "200 – OK",
+        "description": "Success"
+      },
+      {
+        "status": "201 – Created",
+        "description": "Created one or more resource(s)"
+      },
+      {
+        "status": "204 – No Content",
+        "description": "The server has successfully fulfilled the request."
+      },
+      {
+        "status": "400 – Bad Request",
+        "description": "The web-service request was invalid."
+      },
+      {
+        "status": "401 – Unauthorized",
+        "description": "Authentication failed! Invalid credentials."
+      },
+      {
+        "status": "403 – Forbidden",
+        "description": "Requested a resource to which the server does not allow access."
+      },
+      {
+        "status": "404 – Not Found",
+        "description": "Requested resource not found."
+      },
+      {
+        "status": "415 – Unsupported Media Type",
+        "description": "The requested payload format is in an unsupported format."
+      },
+      {
+        "status": "429 – Too Many Request",
+        "description": "User has sent too many requests in a given amount of time."
+      },
+      {
+        "status": "500 – Internal Server Error",
+        "description": "An internal server error occurred while processing the request."
+      },
+      {
+        "status": "502 – Bad Gateway",
+        "description": "Hexnode MDM Web service server is not reachable."
+      },
+      {
+        "status": "503 – Service Unavailable",
+        "description": "The server is currently unable to handle the request due to a temporary overload or maintenance of the server. This is a temporary condition which will be alleviated after some delay."
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List User Groups",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/user-groups/list-user-groups/",
+    "category": "User Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameters": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameters": "per_page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Create User Group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/user-groups/create-user-group/",
+    "category": "User Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "arguments": "groupname",
+        "type": "String",
+        "description": "Required. Name of the user group"
+      },
+      {
+        "arguments": "description",
+        "type": "String",
+        "description": "Required. Description of the group"
+      },
+      {
+        "arguments": "users",
+        "type": "Integer array",
+        "description": "Optional. Array of ID’s of the enrolled users"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Retrieve User Group Details",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/user-groups/retrieve-user-group-details/",
+    "category": "User Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Update User Group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/user-groups/update-user-group/",
+    "category": "User Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "arguments": "groupname",
+        "type": "String",
+        "description": "Required. New name for the user group"
+      },
+      {
+        "arguments": "description",
+        "type": "String",
+        "description": "Required. Description for the group"
+      },
+      {
+        "arguments": "users",
+        "type": "Integer array",
+        "description": "Optional. Updated list of the users"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Add/Remove Users",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/user-groups/add-remove-users/",
+    "category": "User Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "arguments": "add_users",
+        "type": "Integer array",
+        "description": "Required. An array of user IDs to be added into the group"
+      },
+      {
+        "arguments": "remove_users",
+        "type": "Integer array",
+        "description": "Required. Array of user IDs to be removed from the group"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Delete User Group",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/user-groups/delete-user-group/",
+    "category": "User Groups",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "List all Users",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/users/list-all-users/",
+    "category": "Users",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "parameters": "order_by",
+        "type": "String",
+        "description": "Optional. Order by username. Useascordesc",
+        "default value": "false"
+      },
+      {
+        "parameters": "user_type",
+        "type": "String",
+        "description": "Optional. Use local or active directory",
+        "default value": ""
+      },
+      {
+        "parameters": "enrollment_status",
+        "type": "String",
+        "description": "Optional. Use enrolled or unenrolled",
+        "default value": ""
+      },
+      {
+        "parameters": "page",
+        "type": "Integer",
+        "description": "Optional",
+        "default value": "1"
+      },
+      {
+        "parameters": "per_page",
+        "type": "Integer",
+        "description": "Optional. Themaximum valueis250",
+        "default value": "100"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Create User",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/users/create-user/",
+    "category": "Users",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "name",
+        "type": "String",
+        "description": "Required. The display name of the user",
+        "default value": ""
+      },
+      {
+        "argument": "email",
+        "type": "String",
+        "description": "Required. Unique email address of the user",
+        "default value": ""
+      },
+      {
+        "argument": "phoneno",
+        "type": "Integer",
+        "description": "Optional. The contact number of the user",
+        "default value": "null"
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Optional. User password",
+        "default value": "null"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Retrieve User Details",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/users/retrieve-user-details/",
+    "category": "Users",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Edit User",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/users/edit-user/",
+    "category": "Users",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "name",
+        "type": "String",
+        "description": "Required. The display name of the user",
+        "default value": ""
+      },
+      {
+        "argument": "email",
+        "type": "String",
+        "description": "Required. Unique email address of the user",
+        "default value": ""
+      },
+      {
+        "argument": "phoneno",
+        "type": "Integer",
+        "description": "Optional. The contact number of the user",
+        "default value": "null"
+      },
+      {
+        "argument": "password",
+        "type": "String",
+        "description": "Optional. User password",
+        "default value": "null"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Delete User",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/users/delete-user/",
+    "category": "Users",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  },
+  {
+    "title": "Send Enrollment Request",
+    "url": "https://www.hexnode.com/mobile-device-management/developers/users/send-enrollment-request/",
+    "category": "Users",
+    "description": "Category Filter",
+    "http_method": "",
+    "endpoint": "",
+    "parameters": [
+      {
+        "argument": "ownership",
+        "type": "String",
+        "description": "Required. Specify the type of ownership, eitherpersonal,corporateoruser_choice"
+      }
+    ],
+    "curl_example": "",
+    "http_request": "",
+    "http_response": ""
+  }
+]
