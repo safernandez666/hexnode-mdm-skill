@@ -2,6 +2,8 @@
 
 <div align="center">
 
+![Hexnode MDM Skill Banner](banner.png)
+
 <h1 align="center">Hexnode MDM Skill</h1>
 
 </div>
@@ -48,7 +50,7 @@ This skill enables AI agents and developers to:
 - Authentication and error code reference
 
 ### 🚀 Automation Scripts
-- **Device renaming scripts** for macOS (KLR naming convention)
+- **Device renaming scripts** for macOS (COMPANY naming convention)
 - **Policy creation templates** (Firewall, Windows Defender, FileVault, etc.)
 - **Bash and PowerShell** examples for cross-platform support
 - Ready-to-deploy scripts for Hexnode's Automated Tasks
@@ -219,7 +221,7 @@ Authorization: YOUR_API_KEY_HERE
 
 ### Device Renaming (macOS)
 
-Automatically rename Macs on enrollment with format: `KLR-{COUNTRY}{OS}-{SERIAL}`
+Automatically rename Macs on enrollment with format: `COMPANY-{COUNTRY}{OS}-{SERIAL}`
 
 **Location:** `scripts/macos/klr_rename_hexnode.sh`
 

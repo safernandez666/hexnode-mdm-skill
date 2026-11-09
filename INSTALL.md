@@ -151,4 +151,4 @@ Uso interno. No distribuir fuera de la organización sin autorización.
 ---
 
 **Desarrollado por:** Santiago Fernandez (santiagoagustinfernandez@gmail.com)  
-**Organización:** KLR Technology Solutions
+**Organización:** COMPANY Technology Solutions

@@ -89,7 +89,7 @@ Understanding Hexnode's architecture and workflows visually. All diagrams based 
                              │
                              ▼
               Navigate to enrollment URL
-          https://klar.uem.hexnode.com/enroll
+          https://<your-portal>.hexnodemdm.com/enroll
                              │
                              ▼
 ┌────────────────────────────────────────────────────────────────┐
@@ -122,7 +122,7 @@ Understanding Hexnode's architecture and workflows visually. All diagrams based 
                              │
                              ▼
         Apply matching policies to device
-         "KLR Auto Rename on Enrollment"
+         "COMPANY Auto Rename on Enrollment"
                              │
                              ▼
               Policy status: "Applied"
@@ -210,7 +210,7 @@ Understanding Hexnode's architecture and workflows visually. All diagrams based 
 └─────────────────────────────────────────────────────────────────┘
                              │
                              ▼
-              GET https://klar.uem.hexnode.com
+              GET https://<your-portal>.hexnodemdm.com
                   /api/v1/devices/?per_page=250
                              │
                   Headers: Authorization: {API_KEY}
@@ -240,7 +240,7 @@ Understanding Hexnode's architecture and workflows visually. All diagrams based 
 └─────────────────────────────────────────────────────────────────┘
                              │
                              ▼
-             POST https://klar.uem.hexnode.com
+             POST https://<your-portal>.hexnodemdm.com
              /api/v1/actions/save_friendly_name/
                              │
           Headers: Authorization: {API_KEY}
@@ -248,7 +248,7 @@ Understanding Hexnode's architecture and workflows visually. All diagrams based 
                              │
           Body: {
             "device_id_list": [11],
-            "collective_name": "KLR-ARM-C2YV4",
+            "collective_name": "COMPANY-ARM-C2YV4",
             "use_suffix": false
           }
                              │
@@ -269,8 +269,8 @@ Understanding Hexnode's architecture and workflows visually. All diagrams based 
 ┌─────────────────────────────────────────────────────────────────┐
 │  RESULT                                                         │
 │                                                                 │
-│  Local name:   KLR-ARM-C2YV4  ✓                                │
-│  Console name: KLR-ARM-C2YV4  ✓                                │
+│  Local name:   COMPANY-ARM-C2YV4  ✓                                │
+│  Console name: COMPANY-ARM-C2YV4  ✓                                │
 │  Exit code:    0 (success)                                     │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -283,7 +283,7 @@ T+0min    │ User completes enrollment
           │ Status: "Enrolled"
           │
 T+0.5min  │ Hexnode applies policies
-          │ "KLR Auto Rename on Enrollment" → Applied
+          │ "COMPANY Auto Rename on Enrollment" → Applied
           │ Waiting for trigger...
           │
 T+2min    │ User restarts Mac
@@ -298,7 +298,7 @@ T+2.5min  │ Script starts execution
   +5sec   │ ├─ Detect timezone → "America/Argentina/..."
           │ ├─ Map to country → "AR"
           │ ├─ Get serial → "DL6V5C2YV4"
-          │ ├─ Build name → "KLR-ARM-C2YV4"
+          │ ├─ Build name → "COMPANY-ARM-C2YV4"
           │ └─ Rename locally (scutil) ✓
           │
 T+3min    │ Script makes API call #1
@@ -309,7 +309,7 @@ T+3min    │ Script makes API call #1
 T+3min    │ Script makes API call #2
   +0.5s   │ ├─ POST save_friendly_name
           │ ├─ device_id: 11
-          │ ├─ name: "KLR-ARM-C2YV4"
+          │ ├─ name: "COMPANY-ARM-C2YV4"
           │ └─ HTTP 200 OK ✓
           │
 T+3min    │ Script completes
@@ -317,7 +317,7 @@ T+3min    │ Script completes
           │ Logs written to Action History
           │
 T+3.5min  │ Hexnode console updates
-          │ Device name now shows: "KLR-ARM-C2YV4"
+          │ Device name now shows: "COMPANY-ARM-C2YV4"
           │
 T+5min    │ ✓ COMPLETE
           │ Device fully renamed
@@ -2594,7 +2594,7 @@ function Rename-LocalComputer {
 # ============================================================================
 # MAIN EXECUTION
 # ============================================================================
-Write-Info "=== KLR Windows Rename Script ==="
+Write-Info "=== COMPANY Windows Rename Script ==="
 
 # Step 1: Detect timezone and map to country
 $timezone = Get-SystemTimezone
@@ -2612,7 +2612,7 @@ $last5 = $serial.Substring([Math]::Max(0, $serial.Length - 5))
 Write-Info "Last 5 chars: $last5"
 
 # Step 4: Build new name
-$newName = "KLR-${country}W-${last5}"
+$newName = "COMPANY-${country}W-${last5}"
 Write-Info "New name: $newName"
 
 # Validate length (NetBIOS limit: 15 chars)
@@ -3439,8 +3439,8 @@ Based on real implementation:
 ```
 {PREFIX}-{COUNTRY}{OS}-{UNIQUE_ID}
 
-Example: KLR-ARM-C2YV4
-  KLR = Company prefix
+Example: COMPANY-ARM-C2YV4
+  COMPANY = Company prefix
   AR  = Argentina (from timezone)
   M   = macOS
   C2YV4 = Last 5 chars of serial
@@ -3505,7 +3505,7 @@ Hexnode console: No specific limit
 Recommendation: Keep ≤ 15 chars for AD/Windows compatibility
 
 Example format breakdown:
-  KLR-ARM-C2YV4 = 13 characters ✅
+  COMPANY-ARM-C2YV4 = 13 characters ✅
   {3}-{2}{1}-{5} = Total 13 chars
 ```
 
@@ -3775,7 +3775,7 @@ headers = {"Authorization": API_KEY}
 devices = requests.get(f"{BASE_URL}/devices/?per_page=250", headers=headers).json()
 
 # Check naming compliance
-pattern = r"^KLR-[A-Z]{2}[MWL]-[A-Z0-9]{5}$"
+pattern = r"^COMPANY-[A-Z]{2}[MWL]-[A-Z0-9]{5}$"
 compliant = 0
 non_compliant = []
 
@@ -4159,13 +4159,13 @@ Detailed performance metrics and timelines from actual production deployments.
 ### Production Metrics Summary
 
 **Deployment:** Nov 6, 2026  
-**Environment:** Klar UEM  
+**Environment:** Your Organization UEM  
 **Scope:** 3 macOS devices  
 **Success Rate:** 100%
 
 **Device Processing:**
 - Total devices managed: 3 macOS devices
-- Naming compliance: 100% (3/3 with KLR format)
+- Naming compliance: 100% (3/3 with COMPANY format)
 - Policy application success: 100%
 - Script execution success rate: 100%
 - Zero failures or rollbacks
@@ -4192,7 +4192,7 @@ Detailed performance metrics and timelines from actual production deployments.
 
 ```
 T+0:00    User opens Safari
-          Navigate to: https://klar.uem.hexnode.com/enroll
+          Navigate to: https://<your-portal>.hexnodemdm.com/enroll
           
 T+0:15    Enrollment page loads
           User enters credentials
@@ -4219,7 +4219,7 @@ T+2:00    Hexnode backend processes enrollment
           └─ Match: "All macOS Devices"
           
 T+2:10    Policy assignment begins
-          "KLR Auto Rename on Enrollment" → Queued
+          "COMPANY Auto Rename on Enrollment" → Queued
           
 T+2:20    Policy applied to device
           Status: "Applied"
@@ -4264,14 +4264,14 @@ T+3:05.7  ├─ Step 4: Extract last 5 chars
           │     Time: <0.1s
           
 T+3:05.8  ├─ Step 5: Build new name
-          │  └─ Concatenate: KLR-{AR}{M}-{C2YV4}
-          │     Result: "KLR-ARM-C2YV4"
+          │  └─ Concatenate: COMPANY-{AR}{M}-{C2YV4}
+          │     Result: "COMPANY-ARM-C2YV4"
           │     Time: <0.1s
           
 T+3:06.0  ├─ Step 6: Rename locally
-          │  └─ scutil --set ComputerName "KLR-ARM-C2YV4"
-          │     scutil --set HostName "KLR-ARM-C2YV4"
-          │     scutil --set LocalHostName "KLR-ARM-C2YV4"
+          │  └─ scutil --set ComputerName "COMPANY-ARM-C2YV4"
+          │     scutil --set HostName "COMPANY-ARM-C2YV4"
+          │     scutil --set LocalHostName "COMPANY-ARM-C2YV4"
           │     Time: 0.5s
           │     Status: Success ✓
           
@@ -4284,7 +4284,7 @@ T+3:06.5  ├─ Step 7: Find device in Hexnode
           
 T+3:06.9  └─ Step 8: Update Hexnode console
              └─ POST /api/v1/actions/save_friendly_name/
-                Body: {"device_id_list":[11],"collective_name":"KLR-ARM-C2YV4"}
+                Body: {"device_id_list":[11],"collective_name":"COMPANY-ARM-C2YV4"}
                 API Latency: 280ms
                 Response: HTTP 200 OK
                 Status: Updated ✓
@@ -4298,11 +4298,11 @@ T+3:07.5  Agent uploads logs to Hexnode
           Status: "Success"
           
 T+3:10    Hexnode console refreshes
-          Device name now shows: "KLR-ARM-C2YV4"
+          Device name now shows: "COMPANY-ARM-C2YV4"
           
 T+5:00    ✓ COMPLETE
-          Local system: KLR-ARM-C2YV4 ✓
-          Hexnode console: KLR-ARM-C2YV4 ✓
+          Local system: COMPANY-ARM-C2YV4 ✓
+          Hexnode console: COMPANY-ARM-C2YV4 ✓
           Logs: Available in Action History ✓
           User: Can continue using Mac normally
 ```
@@ -4527,9 +4527,9 @@ Nov 6, 2026:  Production deployment
               3 devices enrolled
               Success rate: 100%
               
-              Device 1 (KLR-ARM-C2YV4p): 2.1s
-              Device 2 (KLR-ARM-VDK74): 2.3s  
-              Device 3 (KLR-OTM-T0TLD): 2.4s
+              Device 1 (COMPANY-ARM-C2YV4p): 2.1s
+              Device 2 (COMPANY-ARM-VDK74): 2.3s  
+              Device 3 (COMPANY-OTM-T0TLD): 2.4s
 ```
 
 ---
@@ -4558,7 +4558,7 @@ Network: ~1KB/min (check-in heartbeat)
 
 This knowledge is based on:
 - Real production deployment: Nov 6, 2026
-- Environment: Klar Hexnode UEM
+- Environment: Your Organization Hexnode UEM
 - Devices: 3 macOS (15.8.1, 26.6.2, 26.7)
 - Script iterations: v1 → v2 → FINAL
 - Total test executions: 20

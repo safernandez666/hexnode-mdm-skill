@@ -722,7 +722,7 @@ curl -X POST \
     "policies": [45],
     "devices": [11, 14, 15]
   }' \
-  https://klar.uem.hexnode.com/api/v1/actions/associate_policy/
+  https://<your-portal>.hexnodemdm.com/api/v1/actions/associate_policy/
 ```
 
 ### Response
