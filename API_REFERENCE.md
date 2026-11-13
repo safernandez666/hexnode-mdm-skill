@@ -1,5 +1,7 @@
 # Hexnode API Complete Reference - All Platforms
 
+> Historical scraped snapshot. Parameter tables have lost their original payload grouping and may be incomplete or outdated. Check the current platform-specific official documentation before use; see [references/api.md](references/api.md).
+
 **Scraped:** 2026-11-09T11:48:49.357833
 
 ---
@@ -744,4 +746,3 @@ HTTP/1.1 200 OK
 **Note:** At least one target (devices, devicegroups, users, or usergroups) must be specified.
 
 **Source:** https://www.hexnode.com/mobile-device-management/developers/actions/associate-policy/
-

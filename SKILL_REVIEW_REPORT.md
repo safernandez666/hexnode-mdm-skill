@@ -1,5 +1,7 @@
 # 📋 REPORTE DE CALIDAD - Hexnode MDM/UEM Skill
 
+> **Reporte histórico:** describe una versión anterior y no representa una validación de la skill actual. Contiene afirmaciones obsoletas, incluidas recomendaciones de hardcodear credenciales. Para la guía vigente, consultá [SKILL.md](SKILL.md) y `references/`.
+
 **Fecha:** $(date +"%Y-%m-%d %H:%M")
 **Versión:** 2.0 (Con conocimiento práctico de implementación)
 **Autor:** Santiago Fernandez
@@ -254,4 +256,3 @@ Antes de compartir con el equipo, verificar:
 **CONCLUSIÓN:** Esta skill está lista para ser usada por tu equipo. 
 Contiene conocimiento tanto teórico como práctico probado en producción.
 Recomiendo empezar por las secciones relevantes al rol de cada persona.
-

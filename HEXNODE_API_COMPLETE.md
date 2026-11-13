@@ -1,5 +1,7 @@
 # Hexnode API - Complete Documentation
 
+> Historical scraped snapshot. Some entries lack methods, paths or examples and may be outdated. Consult [references/api.md](references/api.md) and current Hexnode documentation before use.
+
 **Scraped:** 2026-11-09 12:33:48
 
 **Total Endpoints:** 104
