@@ -26,6 +26,7 @@ Avoid printing headers or keys; protect logs, CI outputs and shell history. `cur
 | Edit policy | `PUT /policy/{id}/` | [Edit policy](https://www.hexnode.com/mobile-device-management/developers/policies/edit-policy/) |
 | Associate policy | `POST /actions/associate_policy/` | [Associate policy](https://www.hexnode.com/mobile-device-management/developers/actions/associate-policy/) |
 | Set console friendly name | `POST /actions/save_friendly_name/` | [Set friendly name](https://www.hexnode.com/mobile-device-management/developers/actions/set-friendly-name/) |
+| Send device popup message | `POST /actions/message/` | [Broadcast Message](https://www.hexnode.com/mobile-device-management/developers/actions/broadcast-message/) |
 | List automations | `GET /automations/list/` | [List automations](https://www.hexnode.com/mobile-device-management/developers/automations/api-to-list-automations/) |
 | Initiate existing automation | `POST /automations/run-now/` | [Initiate automation](https://www.hexnode.com/mobile-device-management/developers/automations/initiate-automation-via-api/) |
 
@@ -46,6 +47,22 @@ The association endpoint uses top-level arrays, e.g. `{"policies":[45],"devicegr
 The run-now documentation requires at least one target type. Validate IDs, scope and `applyFilter` behavior with the tenant. An accepted request means initiation, not necessarily successful execution on the device; inspect the action/automation status.
 
 For policy payloads, use the authoritative platform-specific schema: [iOS](https://www.hexnode.com/mobile-device-management/developers/policies/ios-policies/), [Android](https://www.hexnode.com/mobile-device-management/developers/policies/android-policies/), [macOS](https://www.hexnode.com/mobile-device-management/developers/policies/macos-policies/), [Windows](https://www.hexnode.com/mobile-device-management/developers/policies/windows-policies/). Respect nesting, field spelling and conditionally required fields. Check whether the endpoint supports the exact setting; UI support does not automatically imply API support. Read existing state and understand PUT semantics before modifying a policy.
+
+A real tenant's `GET /policy/{id}/` for a macOS policy returned only `password, wifi, vpn, firewall, filevault, Systemextension, Kernelextension, app_management` under its `macos` object. The console's macOS Privacy Preferences / TCC section (which can pre-authorize an app's Notifications permission on a supervised Mac) was not reachable through this API on that tenant — confirm against the current API docs and the specific tenant before assuming TCC/PPPC is or isn't scriptable; do not assume console feature parity with the API.
+
+## Device popup message
+
+"Broadcast Message" in Hexnode's docs is the same action as `POST /actions/message/`. Unlike the association/automation endpoints above, a real tenant rejected an array-wrapped body with `{"non_field_errors":["Invalid data. Expected a dictionary, but got list."]}` — the body must be a single JSON object, not a list:
+
+```bash
+curl --fail-with-body --silent --show-error -X POST \
+  -H "Authorization: $HEXNODE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"devices": [123], "message": "Please restart your device."}' \
+  "$HEXNODE_BASE_URL/api/v1/actions/message/"
+```
+
+Confirmed tenant behavior: `message` is capped at 200 characters (`{"message":["Ensure this field has no more than 200 characters."]}` on overflow), and a 200 response (`{"detail": "Action execution initiated"}`) means the action was queued, not that the popup was seen. On macOS specifically, delivery depends on the Hexnode agent having OS notification permission (System Settings > Notifications) granted on that device; that permission is a user/TCC consent this API does not expose a way to pre-grant (see the Privacy Preferences note above), so an accepted request can still produce no visible popup. Verify against the endpoint's official docs and current field limits before relying on this in a script.
 
 ## Pagination, matching and retries
 
